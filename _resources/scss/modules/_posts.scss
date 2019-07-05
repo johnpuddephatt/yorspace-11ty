@@ -57,7 +57,7 @@
       }
     }
   }
-  .container > *:first-child {
+  .container p:first-child {
     font-size: modular-scale(1);
     font-weight: 600;
     margin-bottom: $base-spacing;
