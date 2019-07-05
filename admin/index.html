@@ -17,15 +17,16 @@
         var image = entry.getIn(['data', 'image']);
         var imageFile = entry.getIn(['image','file']);
         var bg = this.props.getAsset(imageFile);
+        console.log(entry.getIn(['data', 'title']);
         return h('div', {},
           h('header', {className: "post-header"},
             h('div', {className: "container"},
               h('h1', {className: "post-title"}, entry.getIn(['data', 'title']))
             )
           ),
-          h('div', {"className": "post-image"},
-            h('img', {src: bg.toString()}),
-          ),
+          // h('div', {"className": "post-image"},
+          //   h('img', {src: bg.toString()}),
+          // ),
           h('div', {className: "post-content"},
             h('div', {"className": "container"}, this.props.widgetFor('body'))
           )
