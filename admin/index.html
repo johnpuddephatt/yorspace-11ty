@@ -21,9 +21,9 @@
               h('h1', {className: "post-title"}, entry.getIn(['data', 'title']))
             )
           ),
-          // h('div', {"className": "post-image"},
-          //   h('img', {src: bg.toString()}),
-          // ),
+          h('div', {"className": "post-image"},
+            h('img', {src: bg.toString()}),
+          ),
           h('div', {className: "post-content"},
             // h('div', {"className": "container"}, this.props.widgetFor('body'))
             h('div', {"className": "container"}, entry.body)
