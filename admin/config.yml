@@ -35,11 +35,10 @@ collections:
     label: "FAQs" # Used in the UI
     editor:
       preview: false
-    summary: "<h3>hello</h3><p>something</p>{{version}} - {{title}}"
     folder: "_faqs" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Location", name: "location", widget: "select", multiple: true, options: ["home", "live", "invest"]}
       - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Location", name: "location", widget: "select", multiple: true, options: ["home", "live", "invest"]}
