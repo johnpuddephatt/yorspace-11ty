@@ -33,6 +33,9 @@ collections:
       - {label: "Subtitle", name: "headline", widget: "markdown"}
   - name: "faqs" # Used in routes, e.g., /admin/collections/blog
     label: "FAQs" # Used in the UI
+    editor:
+      preview: false
+    summary: "<h3>hello</h3><p>something</p>{{version}} - {{title}}"
     folder: "_faqs" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
