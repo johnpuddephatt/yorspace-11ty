@@ -14,8 +14,9 @@
       render: function() {
         var entry = this.props.entry;
         console.log(entry);
-        var image = entry.getIn(['data.image', 'file']);
-        var bg = this.props.getAsset(image);
+        var image = entry.getIn(['data', 'image']);
+        var imageFile = entry.getIn(['image','file']);
+        var bg = this.props.getAsset(imageFile);
         return h('div', {},
           h('header', {className: "post-header"},
             h('div', {className: "container"},
