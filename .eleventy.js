@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(svgContents);
 
+  eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('uploads');
 
