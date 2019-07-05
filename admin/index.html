@@ -17,8 +17,8 @@
         var bg = this.props.getAsset(image);
         return h('div', {},
           h('header', {"className": "post-header"},
-            h('h1', {"className": "post-title"}, entry.getIn(['data', 'title'])),
-          );
+            h('h1', {"className": "post-title"}, entry.getIn(['data', 'title']))
+          ),
           h('div', {"className": "post-image"},
             h('img', {src: bg.toString()}),
           ),
