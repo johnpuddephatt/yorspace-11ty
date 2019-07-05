@@ -1,0 +1,59 @@
+.section--home-image {
+  position: relative;
+
+  &::after  {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,.3) 30%, rgba(0,0,0,0) 80%);
+  }
+
+  .container {
+    height: 100vw;
+
+    @media screen and (min-width: $medium-screen) {
+      height: 45vw;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .quote--image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .quote--text {
+    position: relative;
+    z-index: 9;
+    color: white;
+    font-size: modular-scale(5);
+    padding: $base-spacing 0;
+    @media screen and (min-width: $medium-screen) {
+      font-size: modular-scale(6);
+      padding: 2 * $base-spacing 0;
+    }
+    &::before, &::after {
+      content: open-quote;
+      font-size: modular-scale(3);
+      color: $orange;
+      margin-right: $small-spacing;
+      line-height: 0px;
+      vertical-align: text-bottom;
+    }
+    &::after {
+      content: close-quote;
+      margin-left: $small-spacing;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer--logo">
+      {{ "/_resources/images/logos/yorspace-dark.svg" | svgContents }}
+    </div>
+    {% if site.data.config.footer %}
+      <div class="site-footer--company">
+       {{ site.data.config.footer | markdownify }}
+      </div>
+    {% endif %}
+    {% if site.data.config.social %}
+      <div class="site-footer--social">
+        <h2 class="footer-header">Social</h2>
+        {% include social.html %}
+      </div>
+    {% endif %}
+    <div class="site-footer--links">
+      <h2 class="footer-header">Site links</h2>
+      {% for path in navigation.footer_pages %}
+        {% for page in collections.pages %}
+          {% if page.inputPath == path  %}
+            <a class="page-link" href="{{ page.url | relative_url | replace: 'index.html', '' }}">{{ page.data.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+
+<footer class="secondary-footer">
+  <div class="container">
+    <a href="https://www.powertochange.org.uk/" target="_blank" class="footer-logo">
+      <img src="/assets/images/supporters/power-to-change-b.png" />
+    </a>
+    <a href="https://www.unltd.org.uk/" target="_blank" class="footer-logo">
+      <img src="/assets/images/supporters/unltd-b.png" />
+    </a>
+    <a href="http://www.communitylandtrusts.org.uk/" target="_blank" class="footer-logo">
+      <img src="/assets/images/supporters/CLT-b.png" />
+    </a>
+    <a href="https://locality.org.uk/" target="_blank" class="footer-logo">
+      <img src="/assets/images/supporters/locality.png" />
+    </a>
+    <a href="http://leedscommunityhomes.org.uk" target="_blank" class="footer-logo">
+      <img src="/assets/images/supporters/lch-condensed.png" />
+    <a>
+  </div>
+</footer>

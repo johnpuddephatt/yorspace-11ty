@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<header class="page-header page-header__home">
+  <div class="container">
+    <h1 class="page-title page-title__home">We’re bringing a <u>fairer</u> kind of housing to York.</h1>
+    <div class="page-subtitle page-subtitle__home">We’re building a tangible solution to York’s housing shortage – by creating financially and environmentally sustainable homes designed to deliver a real sense of community.</div>
+    {{ "/_resources/images/hero.svg" | svgContents }}
+  </div>
+</header>
+
+<section class="section section--home-plans">
+  {% include components/home-plans.html %}
+</section>
+
+<section class="section section--home-image">
+  {% include components/home-image.html, title: "We’re bringing affordable homes to York", image: "/assets/images/james_onsite_l.jpg" %}
+</section>
+
+<section class="section section--home-about">
+  {% include components/home-about.html, title: "How YorSpace will make a difference." %}
+</section>
+
+<section class="section section--home-blog">
+  {% include components/home-blog.html, title: "Latest news and updates." %}
+</section>
+
+<section class="section section--home-image">
+  {% include components/home-image.html, title: "We’re creating homes that meet the needs of people", image: "/assets/images/table-planning_l.jpg" %}
+</section>
+
+
+<section class="section section--faqs">
+  {% include components/faqs.html, title:"Frequently asked questions", location="home" %}
+</section>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% if title %}{{title}} – {{site.title | strip_html}}{% else %}{{site.title | strip_html}} – {{site.description}}{% endif %}</title>
+
+    <link rel="stylesheet" href="/assets/app.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+    {% include google-analytics.html %}
+</head>
+<body>

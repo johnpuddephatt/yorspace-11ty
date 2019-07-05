@@ -1,0 +1,118 @@
+.site-footer {
+  border-top: $base-border;
+  padding: 1.5 * $base-spacing 0 2 * $base-spacing;
+  background-color: $turquoise;
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (min-width: $medium-screen) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    div + div  {
+      padding-top: 1.5 * $base-spacing;
+      @media screen and (min-width: $medium-screen) {
+        padding-top: 0;
+        padding-left: $base-spacing;
+      }
+      @media screen and (min-width: $large-screen) {
+        padding-left: 2 * $base-spacing;
+      }
+    }
+  }
+}
+
+.footer-header {
+  font-weight: 600;
+  font-size: modular-scale(0);
+  @media screen and (min-width: $medium-screen) {
+    margin-top: $base-spacing;
+  }
+}
+
+.site-footer--logo {
+  flex: 0 0 5 * $base-spacing;
+
+  svg {
+    display: block;
+    width: 100%;
+    max-width: 5 * $base-spacing;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    align-self: flex-end;
+  }
+}
+
+.site-footer--company {
+  @media screen and (min-width: $medium-screen) {
+    flex: 0 0 30em;
+    margin-right: auto;
+  }
+
+  align-self: flex-end;
+
+  p {
+    margin-bottom: 0;
+    color: transparentize($base-font-color,.15);
+    font-size: modular-scale(-1);
+  }
+}
+
+.site-footer--social {
+  flex: 0 0 auto;
+  .social-accounts {
+    margin: 0 auto;
+    @media screen and (min-width: $medium-screen) {
+      margin: 0;
+    }
+  }
+  svg path {
+    fill: transparentize($base-font-color,.15);
+  }
+}
+
+.site-footer--links {
+  flex: 0 0 auto;
+  a {
+    display: block;
+    font-size: modular-scale(-1);
+    color: transparentize($base-font-color,.15);
+    line-height: 1.25 * $base-spacing;
+  }
+}
+
+
+.secondary-footer {
+  background-color: $turquoise;
+  text-align: center;;
+  .container {
+    display: flex;
+    // padding-top: $small-spacing;
+    padding-bottom: 3 * $base-spacing;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $medium-screen) {
+      justify-content: flex-start;
+    }
+  }
+  .footer-logo {
+    + .footer-logo {
+      margin-left: $small-spacing;
+      // opacity: .8;
+      @media screen and (min-width: $medium-screen) {
+        margin-left: $base-spacing;
+      }
+    }
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-height: 2 * $base-spacing;
+  }
+}

@@ -1,0 +1,9 @@
+{% capture img_output %}
+{% if site.local != true %}
+{% if pathonly != 'true' %}<img alt="" class="{{ class }}" src="{% endif %}
+//res.cloudinary.com/{{ site.cloudinary }}/image/fetch/w_{{ width | default: "500"}},h_{{ height | default: "500"}}{{ quality | default: 50 | prepend: ",q_"}}{{ modes| default: "c_fill,g_auto" | prepend: "," }}/{{ site.url }}{{ site.baseurl }}{{ img }}
+{% if pathonly != 'true' %}" width="{{ width | default: 500 }}" height="{{ height | default: 500}}" />{% endif %}
+{% else %}
+{% if pathonly != 'true' %}<img alt="" class="{{ class }}" src="{% endif %}{{  img }}{% if pathonly != 'true' %} "/>{% endif %}
+{% endif %}
+{% endcapture %}{{ img_output | strip_newlines }}

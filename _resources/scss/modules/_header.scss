@@ -1,0 +1,31 @@
+.site-header {
+  > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: $small-spacing;
+    padding-bottom: $small-spacing;
+    margin: 0 auto;
+  }
+}
+
+.site-title {
+  font-size: modular-scale(1);
+  line-height: $base-line-height;
+  color: $base-font-color;
+  font-weight: 700;
+  order: 99;
+
+  svg {
+    width: 3 * $base-spacing;
+    height: auto;
+
+    path {
+      fill: $base-font-color;
+      transition: fill 3 * $base-duration;
+    }
+  }
+  &:hover svg path:first-child {
+    fill: $orange;
+  }
+}

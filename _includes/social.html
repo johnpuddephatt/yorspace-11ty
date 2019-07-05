@@ -1,0 +1,16 @@
+<ul class="social-accounts">
+  {% for account in site.data.config.social %}
+    {% if account.twitter %}
+      <li><a title="Twitter" href="//twitter.com/{{ account.twitter}}" target="_blank">{% include logos/twitter.svg %}</a></li>
+    {% endif %}
+    {% if account.facebook %}
+      <li><a title="Facebook" href="//facebook.com/{{ account.facebook}}" target="_blank">{% include logos/facebook.svg %}</a></li>
+    {% endif %}
+    {% if account.linkedin %}
+      <li><a title="LinkedIn" href="//linkedin.com/company/{{ account.linkedin}}" target="_blank">{% include logos/linkedin.svg %}</a></li>
+    {% endif %}
+    {% if account.instagram %}
+      <li><a title="Instagram" href="//instagram.com/{{ account.instagram}}" target="_blank">{% include logos/instagram.svg %}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

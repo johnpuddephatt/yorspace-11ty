@@ -1,0 +1,131 @@
+.page-header, .post-header {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to top, transparentize($light-blue, 0.5) 50%, white 50.001%);
+
+  * {
+    z-index: 9;
+  }
+  .page-title, .post-title {
+    margin-top: 1.5 * $base-spacing;
+    max-width: $max-line-length * 1.2;
+  }
+  .post-meta {
+    margin-top: $small-spacing;
+  }
+}
+
+.page-content, .post-content {
+  padding: $base-spacing 0 2 * $base-spacing;
+  @media screen and (min-width: $medium-screen) {
+    padding: 2 * $base-spacing 0;
+  }
+  max-width: $max-line-length;
+  margin: 0 auto;
+  font-weight: 300;
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  img {
+    display: block;
+    margin: $base-spacing 0 $base-spacing;
+  }
+  h2 {
+    margin-top: 1.5 * $base-spacing;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  ul, ol {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: $small-spacing 0 $small-spacing $small-spacing;
+  }
+
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+  }
+
+  ol {
+    li {
+      list-style-type: lower-alpha;
+      li {
+        list-style-type: lower-roman;
+      }
+    }
+  }
+  .container > *:first-child {
+    font-size: modular-scale(1);
+    font-weight: 600;
+    margin-bottom: $base-spacing;
+  }
+
+  blockquote {
+    border-left: $small-spacing solid $light-blue;
+    margin-left: $base-spacing;
+    padding-left: $small-spacing;
+    margin-top: 1.5 * $base-spacing;
+    font-size: modular-scale(1);
+    p {
+      font-weight: 400;
+    }
+  }
+
+  .video-wrapper {
+    margin: $base-spacing 0 1.5 * $base-spacing;
+  }
+
+  twitter-widget {
+    margin: $base-spacing auto $base-spacing !important;
+  }
+}
+
+.page-header, .post-header {
+  padding: 3 * $base-spacing 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.post-header--image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-header--image-figure {
+  margin-top: -1 * $base-spacing;
+  @media screen and (min-width: $medium-screen) {
+    margin-top: -2 * $base-spacing;
+  }
+  @media screen and (min-width: $large-screen) {
+    margin-top: -3 * $base-spacing;
+  }
+  margin-bottom: $base-spacing;
+  position: relative;
+  z-index: 9;
+  max-width: $max-line-length * 1.2;
+  margin-left: auto;
+  margin-right: auto;
+
+  figcaption {
+    padding: $small-spacing;
+    background-color: $light-blue;
+    text-align: center;
+    line-height: $heading-line-height;
+    font-size: modular-scale(-1);
+  }
+}
+
+.page-subtitle {
+  max-width: $max-line-length;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,21 @@
+<div class="container container--home-blog">
+  <h2 class="section-heading">{{ include.title | default: 'Blog' }}</h2>
+  <div class="home-blog--wrapper">
+    {% for post in collections.posts limit:3 %}
+      <a href="{% if post.data.external_link %}{{ post.data.external_link }}{% else %}{{ post.data.url }}{% endif %}" class="home-blog--item" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="{{ forloop.index | minus: 1 |  times:200 }}">
+        <div class="home-blog--item--image">
+          {% include cloudinary.html, img: post.data.image.file, width: "270" height: "270" %}
+        </div>
+        <div class="home-blog--item--text">
+          <h3 class="home-blog--item--title">{{ post.data.title }}</h3>
+          <!-- <p class="home-blog--item--excerpt">{{ post.data.excerpt | strip_html | strip_newlines | truncate: 80 }}</p> -->
+          <div class="home-blog--item--date">{{ post.data.date | date: site.data.config.date_format }}</div>
+        </div>
+        <span class="home-blog--item--read-more">Read more</span>
+      </a>
+    {% endfor %}
+  </div>
+  <a class="home-blog--view-all button" href="/posts">View all posts</a>
+</div>
+
+{{ "/_resources/images/cloud-background.svg" | svgContents }}

@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  background-color: $base-font-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-width: $large-screen;
+  margin: 0 auto;
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
+}
+
+.container__narrow {
+  max-width: $medium-screen
+}
+
+.padded-box {
+  background-color: $ultralight-blue;
+  padding: $base-spacing;
+  margin: $base-spacing 0;
+  font-weight: 300;
+  font-size: modular-scale(-1);
+}
+
+.sr-only {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip: rect(0,0,0,0);
+ border: 0;
+}

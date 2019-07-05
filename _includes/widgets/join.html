@@ -1,0 +1,245 @@
+<form action="{{ include.action }}" method="post" target="_blank" novalidate="">
+
+  <div id="form">
+
+    <div class="field-group field-group__email">
+      <label for="mce-EMAIL">Email Address<sup>*</sup></label>
+      <input type="email" name="EMAIL" id="mce-EMAIL" value="" placeholder="Email" required>
+    </div>
+
+    <div class="field-group field-group__fname">
+      <label for="mce-FNAME">First Name<sup>*</sup></label>
+      <input type="text" name="FNAME" id="mce-FNAME" value="" placeholder="First name" required>
+    </div>
+
+    <div class="field-group field-group__lname">
+      <label for="mce-LNAME">Last Name<sup>*</sup></label>
+      <input type="text" name="LNAME" id="mce-LNAME" value="" placeholder="Last name" required>
+    </div>
+
+    <div class="field-group field-group__phone">
+      <label for="mce-phone">Phone number</label>
+      <input name="PHONE" id="mce-phone" type="text">
+    </div>
+
+    <div class="field-group field-group__address">
+      <label for="mce-address">Address</label>
+      <textarea name="ADDRESS" id="mce-address" type="number">  </textarea>
+    </div>
+
+    <div class="field-group field-group__postcode">
+      <label for="mce-postcode">Postcode<sup>*</sup></label>
+      <input name="POSTCODE" id="mce-postcode" type="text" required>
+    </div>
+
+    <div>
+      <div class="field-group field-group__register">
+        <label for="mce-register">Join the resident register?</label>
+        <select name="REGISTER" id="mce-register">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="padded-box is-hidden" id="residents">
+        <h3>Resident register questions</h3>
+        <div class="field-group field-group__home">
+          <label for="mce-home">Type of home you’re interested in</label>
+          <select name="HOME" id="mce-home">
+            <option value="1 bed flat">1 bed flat</option>
+            <option value="2 bed flat">2 bed flat</option>
+            <option value="2 bed house">2 bed house</option>
+            <option value="3 bed house">3 bed house</option>
+            <option value="4 bed house">4 bed house</option>
+          </select>
+        </div>
+        <div class="field-group field-group__adults">
+          <label for="mce-adults">Number of adults</label>
+          <input name="ADULTS" id="mce-adults" type="text">
+        </div>
+        <div class="field-group field-group__children">
+          <label for="mce-children">Number of children</label>
+          <input name="CHILDREN" id="mce-children" type="text">
+        </div>
+        <div class="field-group field-group__need">
+          <label for="mce-need">What best describes your housing need?</label>
+          <select id="mce-need" name="NEED">
+            <option value="No current housing need">No current housing need</option>
+            <option value="I am currently renting">I am currently renting</option>
+            <option value="I cannot afford to buy a house">I cannot afford to buy a house</option>
+            <option value="My current house does not meet my needs (e.g. too big; too small)">My current house does not meet my needs (e.g. too big; too small)</option>
+            <option value="I would benefit from living in a stronger community">I would benefit from living in a stronger community</option>
+            <option value="Other (specify below)">Other (specify below)</option>
+          </select>
+        </div>
+        <div class="field-group field-group__need-other is-hidden">
+          <label for="mce-need-other">Describe your housing need</label>
+          <textarea name="NEED_OTHER" id="mce-need-other" type="text"></textarea>
+        </div>
+        <div class="field-group field-group__connection">
+          <label for="mce-connection">What is your connection to York?</label>
+          <select name="CONNECTION" id="mce-connection">
+            <option value="I live in York">I live in York</option>
+            <option value="I have previously lived in York">I have previously lived in York</option>
+            <option value="I work in York">I work in York</option>
+            <option value="I live and work in York">I live and work in York</option>
+            <option value="Other (specify below)">Other (specify below)</option>
+          </select>
+        </div>
+        <div class="field-group field-group__connection-other is-hidden">
+          <label for="mce-connection-other">Describe your connection to your York</label>
+          <textarea name="CONN_OTHER" id="mce-connection-other" type="text"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <p class="privacy-notice">We use Mailchimp as our marketing platform. By clicking next below, you acknowledge your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/">Learn more.</a></p>
+
+    <button id="continue">Next</button>
+
+  </div>
+
+  <!-- honeypot -->
+  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" id="js-validate-robot" name="b_a4752870f583bb49a02427b3c_143fa46c21" tabindex="-1" value=""></div>
+
+  <div class="padded-box" id="pay">
+    <p>To complete your membership signup and become a shareholder member of YorSpace, you need to pay £2.</p>
+    <p><strong>No PayPal account?</strong> Choose the pay with card option in the window that appears after clicking the button below.</p>
+    <div id="payment"></div>
+  </div>
+
+  <div id="thankyou">
+    <h3>Thank you!</h3>
+    <p id="js-subscribe-response"></p>
+  </div>
+
+</form>
+
+<script src="https://www.paypal.com/sdk/js?client-id={{include.apikey}}&amp;currency=GBP&amp;disable-funding=credit"></script>
+
+<script id="rendered-js">
+
+  var housingNeedSelect = document.querySelector('#mce-register');
+  var housingNeedQuestions = document.querySelector('#residents');
+  housingNeedSelect.addEventListener('change', (e)=>{
+    if(e.target.value == 'Yes') {
+      housingNeedQuestions.classList.remove('is-hidden');
+    }
+    else {
+      housingNeedQuestions.classList.add('is-hidden');
+    }
+  });
+
+  var needSelect = document.querySelector('#mce-need');
+  var needOtherGroup = document.querySelector('.field-group__need-other');
+  needSelect.addEventListener('change', (e)=>{
+    if(e.target.value == 'Other (specify below)') {
+      needOtherGroup.classList.remove('is-hidden');
+    }
+    else {
+      needOtherGroup.classList.add('is-hidden');
+    }
+  });
+
+  var connectionSelect = document.querySelector('#mce-connection');
+  var connectionOtherGroup = document.querySelector('.field-group__connection-other');
+  connectionSelect.addEventListener('change', (e)=>{
+    if(e.target.value == 'Other (specify below)') {
+      connectionOtherGroup.classList.remove('is-hidden');
+    }
+    else {
+      connectionOtherGroup.classList.add('is-hidden');
+    }
+  });
+
+  paypal.Buttons({
+
+    // Set up the transaction
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '{{include.amount}}'
+          }
+        }]
+      });
+    },
+
+    // Finalize the transaction
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        // Show a success message to the buyer
+        // alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        mailchimp();
+      });
+    },
+
+    onError: ( error ) => {
+      console.log('error',error);
+    }
+
+
+  }).render('#payment');
+
+  /*
+   * Mailchimp AJAX form submit VanillaJS
+   * Vanilla JS
+   * Author: Michiel Vandewalle
+   * Github author: https://github.com/michiel-vandewalle
+   * Github project: https://github.com/michiel-vandewalle/Mailchimp-AJAX-form-submit-vanillaJS
+   */
+
+  function mailchimp() {
+
+    var form = document.forms[0];
+    // Get url for mailchimp
+    var url = form.action.replace('/post?', '/post-json?');
+
+    // Add form data to object
+    var data = '';
+
+    var inputs = form.querySelectorAll('#form input');
+    for (var i = 0; i < inputs.length; i++) {
+      data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
+    }
+
+    var textareas = form.querySelectorAll('#form textarea');
+    for (var i = 0; i < textareas.length; i++) {
+      data += '&' + textareas[i].name + '=' + encodeURIComponent(textareas[i].value);
+    }
+
+    var selects = form.querySelectorAll('#form select');
+    for (var i = 0; i < selects.length; i++) {
+      data += '&' + selects[i].name + '=' + encodeURIComponent(selects[i].value);
+    }
+
+    // Create & add post script to the DOM
+    var script = document.createElement('script');
+    script.src = url + data;
+    document.body.appendChild(script);
+
+    // Callback function
+    var callback = 'callback';
+    window[callback] = function(data) {
+
+      // Remove post script from the DOM
+      delete window[callback];
+      document.body.removeChild(script);
+
+      // Display response message
+      document.getElementById('js-subscribe-response').innerHTML = data.msg
+      document.getElementById('pay').style.display = 'none';
+      document.getElementById('thankyou').style.display = 'block';
+
+    };
+  };
+
+  document.getElementById('continue').addEventListener('click', function(e) {
+    e.preventDefault();
+    if (document.forms[0].reportValidity() ) {
+      document.getElementById('form').style.display = 'none';
+      document.getElementById('pay').style.display = 'block';
+    }
+  });
+
+</script>

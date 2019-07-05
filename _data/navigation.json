@@ -1,0 +1,11 @@
+{
+	"header_pages": [
+		"./_pages/invest.md",
+		"./_pages/live.md",
+		"./_pages/join.md"
+	],
+	"footer_pages": [
+		"./_pages/privacy.md",
+		"./_pages/contact.md"
+	]
+}
