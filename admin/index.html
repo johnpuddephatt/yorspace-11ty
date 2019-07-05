@@ -25,9 +25,9 @@
           h('div', {"className": "post-image"},
             h('div', {className: "container"},
               h('figure', {className: "post-header--image-figure"},
-                h('img', {className: "post-header--image", src: bg.toString()})
+                h('img', {className: "post-header--image", src: bg.toString()}),
+                h('figcaption',{}, entry.getIn(['data', 'image', 'caption']))
               ),
-              h('figcaption',entry.getIn(['data', 'image', 'caption']))
             )
           ),
           h('div', {className: "post-content"},
