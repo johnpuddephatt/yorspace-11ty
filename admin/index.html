@@ -13,16 +13,22 @@
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        // var image = entry.getIn(['data', 'image']);
-        // var bg = this.props.getAsset(image);
+        var image = entry.getIn(['data.image', 'file']);
+        var bg = this.props.getAsset(image);
         return h('div', {},
           h('header', {className: "post-header"},
-            h('h1', {className: "post-title"}, entry.getIn(['data', 'title']))
+            h('div', {className: "container"},
+              h('h1', {className: "post-title"}, entry.getIn(['data', 'title']))
+            )
           ),
           // h('div', {"className": "post-image"},
           //   h('img', {src: bg.toString()}),
           // ),
-          h('div', {"className": "post-content"}, this.props.widgetFor('body'))
+          h('div', {className: "post-content"},
+            h('div', {className: "container"},
+              h('div', {"className": "post-content"}, this.props.widgetFor('body'))
+            )
+          )
         );
       }
     });
