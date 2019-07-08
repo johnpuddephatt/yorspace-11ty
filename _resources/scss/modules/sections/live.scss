@@ -72,8 +72,10 @@
 }
 
 .about-life--boxes {
-  display: flex;
-  flex-direction: row;
+  @media screen and (min-width: $medium-screen) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .about-life--box {
@@ -82,17 +84,19 @@
   padding: $base-spacing $small-spacing;
   flex: 1 0 25%;
   margin: $base-spacing 0;
-  + .about-life--box {
-    margin-left:  $base-spacing;
-  }
   @media screen and (min-width: $medium-screen) {
     // margin-top: -2 * $base-spacing;
     margin-bottom: 0;
     margin-right: 0;
+    + .about-life--box {
+      margin-left:  $base-spacing;
+    }
   }
 
   h3 {
-    text-align: center;
+    @media screen and (min-width: $medium-screen) {
+      text-align: center;
+    }
     margin-bottom: $base-spacing;
   }
   li {

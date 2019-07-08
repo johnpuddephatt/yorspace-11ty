@@ -26,7 +26,10 @@
     }
   }
   .section-title {
-    font-size: modular-scale(5);
+    font-size: modular-scale(3);
+    @media screen and (min-width: $medium-screen) {
+      font-size: modular-scale(5);
+    }
     margin-bottom: $base-spacing;
   }
 }
