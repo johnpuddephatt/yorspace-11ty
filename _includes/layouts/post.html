@@ -21,7 +21,7 @@ layout: default
   <div class="post-image">
     <div class="container">
       <figure class="post-header--image-figure">
-        {% include cloudinary.html img=image.file class='post-header--image' width='1400' height='788' %}
+        {% include cloudinary.html, img:image.file, class:'post-header--image', width:'1400', height:'788' %}
         {% if image.caption %}
           <figcaption>{{ image.caption }}</figcaption>
         {% endif %}
