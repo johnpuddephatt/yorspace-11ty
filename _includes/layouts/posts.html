@@ -3,7 +3,7 @@ layout: page
 ---
 <div>
   {% for post in collections.posts %}
-    <a href="{% if post.data.external_link %}{{ post.data.external_link }}{% else %}{{ post.data.url }}{% endif %}" class="home-blog--item horizontal" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="{{ forloop.index | minus: 1 |  times:200 }}">
+    <a href="{% if post.data.external_link %}{{ post.data.external_link }}{% else %}{{ post.url }}{% endif %}" class="home-blog--item horizontal" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="{{ forloop.index | minus: 1 |  times:200 }}">
       <div class="home-blog--item--image">
         {% include cloudinary.html, img: post.data.image.file, width: "500", height: "500" %}
       </div>
