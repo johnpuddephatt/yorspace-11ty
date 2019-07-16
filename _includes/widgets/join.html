@@ -37,6 +37,7 @@
         <div class="field-group field-group__home">
           <label for="mce-home">Type of home you’re interested in</label>
           <select name="HOME" id="mce-home">
+            <option value="–">–</option>
             <option value="1 bed flat">1 bed flat</option>
             <option value="2 bed flat">2 bed flat</option>
             <option value="2 bed house">2 bed house</option>
@@ -55,6 +56,7 @@
         <div class="field-group field-group__need">
           <label for="mce-need">What best describes your housing need?</label>
           <select id="mce-need" name="NEED">
+            <option value="–">–</option>
             <option value="No current housing need">No current housing need</option>
             <option value="I am currently renting">I am currently renting</option>
             <option value="I cannot afford to buy a house">I cannot afford to buy a house</option>
@@ -70,6 +72,7 @@
         <div class="field-group field-group__connection">
           <label for="mce-connection">What is your connection to York?</label>
           <select name="CONNECTION" id="mce-connection">
+            <option value="–">–</option>
             <option value="I live in York">I live in York</option>
             <option value="I have previously lived in York">I have previously lived in York</option>
             <option value="I work in York">I work in York</option>
@@ -161,6 +164,7 @@
    * Github project: https://github.com/michiel-vandewalle/Mailchimp-AJAX-form-submit-vanillaJS
    */
   function mailchimp() {
+    document.getElementById('pay').style.display = 'none';
     var form = document.forms[0];
     // Get url for mailchimp
     var url = form.action.replace('/post?', '/post-json?');
@@ -190,7 +194,6 @@
       document.body.removeChild(script);
       // Display response message
       document.getElementById('js-subscribe-response').innerHTML = data.msg
-      document.getElementById('pay').style.display = 'none';
       document.getElementById('thankyou').style.display = 'block';
       document.getElementById('thankyou').scrollIntoView({behavior: "smooth", block: "center"});
     };
