@@ -192,13 +192,16 @@
       document.getElementById('js-subscribe-response').innerHTML = data.msg
       document.getElementById('pay').style.display = 'none';
       document.getElementById('thankyou').style.display = 'block';
+      document.getElementById('thankyou').scrollIntoView({behavior: "smooth", block: "center"});
     };
   };
+  // When clicking continue, move onto the payment section if signup form is valid
   document.getElementById('continue').addEventListener('click', function(e) {
     e.preventDefault();
     if (document.forms[0].reportValidity() ) {
       document.getElementById('form').style.display = 'none';
       document.getElementById('pay').style.display = 'block';
+      document.getElementById('pay').scrollIntoView({behavior: "smooth", block: "center"});
     }
   });
 </script>
