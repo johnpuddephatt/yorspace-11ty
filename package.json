@@ -10,7 +10,7 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "11ty" : "npx @11ty/eleventy"
+    "11ty": "npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
@@ -18,13 +18,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
     "resolve-url-loader": "2.3.1",
-    "sass": "^1.22.3",
+    "sass": "^1.22.5",
     "sass-loader": "7.*",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "eleventy-plugin-svg-contents": "^0.5.1",
-    "laravel-mix": "^4.0.16",
+    "laravel-mix": "^4.1.2",
     "simple-slider": "^1.0.0"
   }
 }
