@@ -1,8 +1,8 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<form method="POST" action="{{include.action}}" class="contact-form">
-  <h2 class="form-title">{{include.title | default: 'Contact us' }}</h2>
+<form method="POST" action="{{action}}" class="contact-form">
+  <h2 class="form-title">{{title | default: 'Contact us' }}</h2>
   <input type="text" name="_honey" value="" style="display: none;">
-  <input type="hidden" name="_subject" value="{{ include.subject | default: "New message received" }}" >
+  <input type="hidden" name="_subject" value="{{ subject | default: "New message received" }}" >
   <input type="email" name="_replyto" placeholder="Your email" required="">
   <input type="text" name="name" placeholder="Your name" required="">
   <textarea rows="7" name="message" placeholder="Your message" required=""></textarea>
@@ -16,8 +16,8 @@
 
   	var message = new Object();
   	message.loading = 'Loading...';
-  	message.success = '{{ include.success | default: 'Thank you. Message received!'}}'';
-  	message.failure = '{{ include.error | default: 'Whoops! There was a problem sending your message.'}}';
+  	message.success = '{{ success | default: 'Thank you. Message received!'}}';
+  	message.failure = '{{ error | default: 'Whoops! There was a problem sending your message.'}}';
 
   	var form = document.forms[0];
     var formAction = form.getAttribute("action");
