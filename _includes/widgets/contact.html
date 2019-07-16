@@ -22,7 +22,8 @@
   	var form = document.forms[0];
     var formAction = form.getAttribute("action");
   	var statusMessage = document.createElement('div');
-  	statusMessage.className = 'status';
+  	statusMessage.classList.add('status');
+    statusMessage.classList.add('padded-box');
 
   	// Set up the AJAX request
   	var request = new XMLHttpRequest();
