@@ -101,126 +101,127 @@
     <p id="js-subscribe-response"></p>
   </div>
 </form>
+
 <script src="https://www.paypal.com/sdk/js?client-id={{apikey}}&amp;currency=GBP&amp;disable-funding=credit"></script>
-<script id="rendered-js">
-  "use strict";
+{% raw %}
+  <script id="rendered-js">
+    "use strict";
+    var housingNeedSelect = document.querySelector('#mce-register');
+    var housingNeedQuestions = document.querySelector('#residents');
+    housingNeedSelect.addEventListener('change', function (e) {
+      if (e.target.value == 'Yes') {
+        housingNeedQuestions.classList.remove('is-hidden');
+      } else {
+        housingNeedQuestions.classList.add('is-hidden');
+      }
+    });
+    var needSelect = document.querySelector('#mce-need');
+    var needOtherGroup = document.querySelector('.field-group__need-other');
+    needSelect.addEventListener('change', function (e) {
+      if (e.target.value == 'Other (specify below)') {
+        needOtherGroup.classList.remove('is-hidden');
+      } else {
+        needOtherGroup.classList.add('is-hidden');
+      }
+    });
+    var connectionSelect = document.querySelector('#mce-connection');
+    var connectionOtherGroup = document.querySelector('.field-group__connection-other');
+    connectionSelect.addEventListener('change', function (e) {
+      if (e.target.value == 'Other (specify below)') {
+        connectionOtherGroup.classList.remove('is-hidden');
+      } else {
+        connectionOtherGroup.classList.add('is-hidden');
+      }
+    });
+    paypal.Buttons({
+      // Set up the transaction
+      createOrder: function createOrder(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '{{amount}}'
+            }
+          }]
+        });
+      },
+      // Finalize the transaction
+      onApprove: function onApprove(data, actions) {
+        return actions.order.capture().then(function (details) {
+          // Show a success message to the buyer
+          // alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          mailchimp();
+        });
+      },
+      onError: function onError(error) {
+        console.log('error', error);
+      }
+    }).render('#payment');
+    /*
+     * Mailchimp AJAX form submit VanillaJS
+     * Vanilla JS
+     * Author: Michiel Vandewalle
+     * Github author: https://github.com/michiel-vandewalle
+     * Github project: https://github.com/michiel-vandewalle/Mailchimp-AJAX-form-submit-vanillaJS
+     */
+    function mailchimp() {
+      document.getElementById('pay').style.display = 'none';
+      var form = document.forms[0]; // Get url for mailchimp
 
-  var housingNeedSelect = document.querySelector('#mce-register');
-  var housingNeedQuestions = document.querySelector('#residents');
-  housingNeedSelect.addEventListener('change', function (e) {
-    if (e.target.value == 'Yes') {
-      housingNeedQuestions.classList.remove('is-hidden');
-    } else {
-      housingNeedQuestions.classList.add('is-hidden');
+      var url = form.action.replace('/post?', '/post-json?'); // Add form data to object
+
+      var data = '';
+      var inputs = form.querySelectorAll('#form input');
+
+      for (var i = 0; i < inputs.length; i++) {
+        data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
+      }
+
+      var textareas = form.querySelectorAll('#form textarea');
+
+      for (var i = 0; i < textareas.length; i++) {
+        data += '&' + textareas[i].name + '=' + encodeURIComponent(textareas[i].value);
+      }
+
+      var selects = form.querySelectorAll('#form select');
+
+      for (var i = 0; i < selects.length; i++) {
+        data += '&' + selects[i].name + '=' + encodeURIComponent(selects[i].value);
+      } // Create & add post script to the DOM
+
+
+      var script = document.createElement('script');
+      script.src = url + data;
+      document.body.appendChild(script); // Callback function
+
+      var callback = 'callback';
+
+      window[callback] = function (data) {
+        // Remove post script from the DOM
+        delete window[callback];
+        document.body.removeChild(script); // Display response message
+
+        document.getElementById('js-subscribe-response').innerHTML = data.msg;
+        document.getElementById('thankyou').style.display = 'block';
+        document.getElementById('thankyou').scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      };
     }
-  });
-  var needSelect = document.querySelector('#mce-need');
-  var needOtherGroup = document.querySelector('.field-group__need-other');
-  needSelect.addEventListener('change', function (e) {
-    if (e.target.value == 'Other (specify below)') {
-      needOtherGroup.classList.remove('is-hidden');
-    } else {
-      needOtherGroup.classList.add('is-hidden');
-    }
-  });
-  var connectionSelect = document.querySelector('#mce-connection');
-  var connectionOtherGroup = document.querySelector('.field-group__connection-other');
-  connectionSelect.addEventListener('change', function (e) {
-    if (e.target.value == 'Other (specify below)') {
-      connectionOtherGroup.classList.remove('is-hidden');
-    } else {
-      connectionOtherGroup.classList.add('is-hidden');
-    }
-  });
-  paypal.Buttons({
-    // Set up the transaction
-    createOrder: function createOrder(data, actions) {
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '{{amount}}'
-          }
-        }]
-      });
-    },
-    // Finalize the transaction
-    onApprove: function onApprove(data, actions) {
-      return actions.order.capture().then(function (details) {
-        // Show a success message to the buyer
-        // alert('Transaction completed by ' + details.payer.name.given_name + '!');
-        mailchimp();
-      });
-    },
-    onError: function onError(error) {
-      console.log('error', error);
-    }
-  }).render('#payment');
-  /*
-   * Mailchimp AJAX form submit VanillaJS
-   * Vanilla JS
-   * Author: Michiel Vandewalle
-   * Github author: https://github.com/michiel-vandewalle
-   * Github project: https://github.com/michiel-vandewalle/Mailchimp-AJAX-form-submit-vanillaJS
-   */
 
-  function mailchimp() {
-    document.getElementById('pay').style.display = 'none';
-    var form = document.forms[0]; // Get url for mailchimp
+    ; // When clicking continue, move onto the payment section if signup form is valid
 
-    var url = form.action.replace('/post?', '/post-json?'); // Add form data to object
+    document.getElementById('continue').addEventListener('click', function (e) {
+      e.preventDefault();
 
-    var data = '';
-    var inputs = form.querySelectorAll('#form input');
-
-    for (var i = 0; i < inputs.length; i++) {
-      data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
-    }
-
-    var textareas = form.querySelectorAll('#form textarea');
-
-    for (var i = 0; i < textareas.length; i++) {
-      data += '&' + textareas[i].name + '=' + encodeURIComponent(textareas[i].value);
-    }
-
-    var selects = form.querySelectorAll('#form select');
-
-    for (var i = 0; i < selects.length; i++) {
-      data += '&' + selects[i].name + '=' + encodeURIComponent(selects[i].value);
-    } // Create & add post script to the DOM
-
-
-    var script = document.createElement('script');
-    script.src = url + data;
-    document.body.appendChild(script); // Callback function
-
-    var callback = 'callback';
-
-    window[callback] = function (data) {
-      // Remove post script from the DOM
-      delete window[callback];
-      document.body.removeChild(script); // Display response message
-
-      document.getElementById('js-subscribe-response').innerHTML = data.msg;
-      document.getElementById('thankyou').style.display = 'block';
-      document.getElementById('thankyou').scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
-    };
-  }
-
-  ; // When clicking continue, move onto the payment section if signup form is valid
-
-  document.getElementById('continue').addEventListener('click', function (e) {
-    e.preventDefault();
-
-    if (document.forms[0].reportValidity()) {
-      document.getElementById('form').style.display = 'none';
-      document.getElementById('pay').style.display = 'block';
-      document.getElementById('pay').scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
-    }
-  });
-</script>
+      if (document.forms[0].reportValidity()) {
+        document.getElementById('form').style.display = 'none';
+        document.getElementById('pay').style.display = 'block';
+        document.getElementById('pay').scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }
+    });
+  </script>
+{% endraw %}
