@@ -213,14 +213,18 @@
 
     document.getElementById('continue').addEventListener('click', function (e) {
       e.preventDefault();
-
-      if (document.forms[0].reportValidity()) {
-        document.getElementById('form').style.display = 'none';
-        document.getElementById('pay').style.display = 'block';
-        document.getElementById('pay').scrollIntoView({
-          behavior: "smooth",
-          block: "center"
-        });
+      if(window.debugmode === true) {
+        mailchimp();
+      }
+      else {
+        if (document.forms[0].reportValidity()) {
+          document.getElementById('form').style.display = 'none';
+          document.getElementById('pay').style.display = 'block';
+          document.getElementById('pay').scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+        }
       }
     });
   </script>
