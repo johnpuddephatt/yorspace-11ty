@@ -70,7 +70,9 @@ module.exports = function(eleventyConfig) {
       "ico",
       "svg",
       ".webmanifest",
-      ".md"
+      ".md",
+      ".html",
+      
     ]
   };
 };
