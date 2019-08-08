@@ -69,10 +69,11 @@ module.exports = function(eleventyConfig) {
       "png",
       "ico",
       "svg",
-      ".webmanifest",
-      ".md",
-      ".html",
-      
+      "xml",
+      "webmanifest",
+      "md",
+      "html",
+
     ]
   };
 };
