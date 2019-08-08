@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('uploads');
+  // eleventyConfig.addPassthroughCopy({"/favicon/**" : "/"});
 
   eleventyConfig.addCollection('faqs', collection => {
     return collection.getFilteredByGlob('_faqs/*.md');
@@ -46,10 +47,8 @@ module.exports = function(eleventyConfig) {
       const reducedKey = keys.reduce((object, key) => {
         return object[key];
       }, item);
-
       return (reducedKey.indexOf(value) ? item : false);
     });
-
   });
 
   eleventyConfig.setLiquidOptions({
@@ -65,6 +64,12 @@ module.exports = function(eleventyConfig) {
       input: "./",      // Equivalent to Jekyll's source property
       output: "./_site" // Equivalent to Jekyll's destination property
     },
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    templateFormats: [
+      "png",
+      "ico",
+      "svg",
+      ".webmanifest"
+    ]
   };
 };
