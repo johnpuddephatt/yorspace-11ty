@@ -65,11 +65,11 @@ module.exports = function(eleventyConfig) {
       output: "./_site" // Equivalent to Jekyll's destination property
     },
     passthroughFileCopy: true,
-    templateFormats: [
-      "png",
-      "ico",
-      "svg",
-      ".webmanifest"
-    ]
+    // templateFormats: [
+    //   "png",
+    //   "ico",
+    //   "svg",
+    //   ".webmanifest"
+    // ]
   };
 };
