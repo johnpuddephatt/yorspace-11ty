@@ -1,4 +1,5 @@
 const svgContents = require("eleventy-plugin-svg-contents");
+// const matter = require('gray-matter');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.html');
@@ -11,6 +12,11 @@ module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addPlugin(svgContents);
+
+  // eleventyConfig.setFrontMatterParsingOptions({
+  //   excerpt: true,
+  //   excerpt_separator: "<!-- excerpt -->"
+  // });
 
   eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.addPassthroughCopy('assets');
@@ -72,8 +78,7 @@ module.exports = function(eleventyConfig) {
       "xml",
       "webmanifest",
       "md",
-      "html",
-
+      "html"
     ]
   };
 };
