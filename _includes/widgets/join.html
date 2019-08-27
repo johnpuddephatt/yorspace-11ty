@@ -201,6 +201,7 @@
         document.body.removeChild(script); // Display response message
 
         document.getElementById('js-subscribe-response').innerHTML = data.msg;
+        document.getElementById('pay').style.display = 'none';
         document.getElementById('thankyou').style.display = 'block';
         document.getElementById('thankyou').scrollIntoView({
           behavior: "smooth",
