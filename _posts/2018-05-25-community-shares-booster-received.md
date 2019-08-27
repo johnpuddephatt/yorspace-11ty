@@ -1,5 +1,6 @@
 ---
 title: Power To Change Community Shares Booster Programme grant award!
+date: 2018-05-25
 image:
   file: /uploads/map.jpg
   caption:

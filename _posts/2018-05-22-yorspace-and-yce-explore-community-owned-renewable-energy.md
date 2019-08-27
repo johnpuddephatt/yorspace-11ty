@@ -1,5 +1,6 @@
 ---
 title: Exploring community owned renewable energy at Lowfield Green
+date: 2018-05-22
 image:
   file: /uploads/DbY-FbLWAAAi7S1-1.jpg
   caption:

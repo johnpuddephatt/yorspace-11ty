@@ -1,5 +1,6 @@
 ---
 title: Planning Committee 20th March City of York Council
+date: 2019-03-21
 image:
   file: /uploads/planning-committee.jpg
   caption: Lowfield Green Resident Group celebrating the result!!

@@ -1,5 +1,6 @@
 ---
 title: Detailed Planning submitted for Lowfield Green!
+date: 2019-01-14
 image:
   file: /uploads/17008-302G-Proposed-Site-Plan.jpg
   caption: Proposed site plan for the 19 homes proposed at Lowfield Green; York’s first sustainable, cooperatively owned community
