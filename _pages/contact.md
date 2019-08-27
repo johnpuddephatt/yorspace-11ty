@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Contact
+name: Contact
+title: Contact us
 subtitle: |
   We’re always looking for new members, pledges of investment or people just interested in getting in touch. Use the form below to start talking to us and one of our team will be in touch.
 ---

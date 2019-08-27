@@ -19,7 +19,7 @@
       {% for path in navigation.footer_pages %}
         {% for page in collections.pages %}
           {% if page.inputPath == path  %}
-            <a class="page-link" href="{{ page.url | relative_url | replace: 'index.html', '' }}">{{ page.data.title | escape }}</a>
+            <a class="page-link" href="{{ page.url | relative_url | replace: 'index.html', '' }}">{{ page.data.name | escape }}</a>
           {% endif %}
         {% endfor %}
       {% endfor %}

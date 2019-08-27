@@ -4,9 +4,9 @@ layout: default
 <header class="page-header page-header__section">
   <div class="container">
     <div class="header--left">
-      <h1 class="section-title">Be part of a sustainable and affordable new way of living with YorSpace</h1>
+      <h1 class="section-title">{{ title | escape | markdownify }}</h1>
       <div class="section-subtitle">
-        <p>We’re pioneering a model that will create sustainably built and permanently affordable homes while also allowing people to come together and create their own communities.</p>
+        <p>{{ subtitle | escape | markdownify }}</p>
       </div>
     </div>
     <div class="header--right">

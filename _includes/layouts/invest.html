@@ -4,9 +4,9 @@ layout: default
 <header class="page-header page-header__section">
   <div class="container">
     <div class="header--left">
-      <h1 class="section-title">{{ headline }}</h1>
+      <h1 class="section-title">{{ title | escape | markdownify }}</h1>
       <div class="section-subtitle">
-        {{ subtitle | markdownify }}
+        {{ subtitle | escape | markdownify }}
       </div>
     </div>
     <div class="header--right">

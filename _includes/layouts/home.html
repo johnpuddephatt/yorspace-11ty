@@ -3,8 +3,8 @@ layout: default
 ---
 <header class="page-header page-header__home">
   <div class="container">
-    <h1 class="page-title page-title__home">We’re bringing a <u>fairer</u> kind of housing to York.</h1>
-    <div class="page-subtitle page-subtitle__home">We’re building a tangible solution to York’s housing shortage – by creating financially and environmentally sustainable homes designed to deliver a real sense of community.</div>
+    <h1 class="page-title page-title__home">{{ title | renderUsingMarkdown}}</h1>
+    <div class="page-subtitle page-subtitle__home">{{ subtitle | escape | newline_to_br }}</div>
     {{ "/_resources/images/hero.svg" | svgContents }}
   </div>
 </header>

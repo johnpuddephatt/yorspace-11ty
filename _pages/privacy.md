@@ -1,5 +1,6 @@
 ---
 layout: page
+name: Privacy
 title: Privacy Policy
 subtitle: Written & approved by Directors May 2018
 ---
