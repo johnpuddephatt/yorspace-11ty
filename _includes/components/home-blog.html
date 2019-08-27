@@ -1,7 +1,7 @@
 <div class="container container--home-blog">
   <h2 class="section-heading">{{ include.title | default: 'Blog' }}</h2>
   <div class="home-blog--wrapper">
-    {% assign posts = collections.posts | sort: post.data.date | reverse %}
+    {% assign posts = collections.posts | sort: post.date | reverse %}
     {% for post in posts limit: 3 %}
       <a href="{% if post.data.external_link %}{{ post.data.external_link }}{% else %}{{ post.url }}{% endif %}" class="home-blog--item" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="{{ forloop.index | minus: 1 |  times:200 }}">
         <div class="home-blog--item--image">
