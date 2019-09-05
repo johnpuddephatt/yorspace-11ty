@@ -4,7 +4,7 @@ location:
 - home
 - invest
 ---
-Full details about how to invest will be made available when the share offer goes live, which is expected to be summer 2019.
+Full details about how to invest will be made available when the share offer goes live, which is expected to be autumn 2019.
 
 We’ll be contacting everyone on our mailing list to notify them of the share offer launch, so if you want to be notified, <a href="https://yorspace.us16.list-manage.com/subscribe?u=87de39e1c0b0e9d7ec221831c&id=6979cefe92" target="_blank">please sign up</a>. If you've pledged to invest in YorSpace previously then we have your contact details on file and will be in touch.
 
