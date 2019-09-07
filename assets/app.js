@@ -1,1 +1,446 @@
-!function(e){var n={};function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:r})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var o in e)t.d(r,o,function(n){return e[n]}.bind(null,o));return r},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="/",t(t.s=0)}([function(e,n,t){t(1),e.exports=t(3)},function(e,n,t){var r,o=t(2),i=document.querySelector(".slider");i&&o.getSlider({container:i,duration:1.5,delay:5,prop:"opacity",unit:"",init:0,show:1,end:0}),r=document.querySelectorAll(".section--faqs h3"),Array.prototype.forEach.call(r,function(e){e.innerHTML='\n      <button aria-expanded="false">\n        '.concat(e.textContent,'\n        <svg width="46" height="46" viewBox="0 0 46 46">\n          <path fill="#83D6C1" stroke="#0D1D48" stroke-width="4" stroke-miterlimit="10" d="M32.1 23.1v16.2l-14-8.1L4 23.1l14.1-8.2 14-8.1z"/>\n        </svg>\n\n      </button>\n    ');var n=function(e){for(var n=[];e.nextElementSibling&&"H3"!==e.nextElementSibling.tagName;)n.push(e.nextElementSibling),e=e.nextElementSibling;return n.forEach(function(e){e.parentNode.removeChild(e)}),n}(e),t=document.createElement("div");t.hidden=!0,n.forEach(function(e){t.appendChild(e)}),e.parentNode.insertBefore(t,e.nextElementSibling);var r=e.querySelector("button");r.onclick=function(){var e="true"===r.getAttribute("aria-expanded")||!1;e||(t.parentNode.querySelectorAll("div").forEach(function(e){e.hidden=!0}),t.parentNode.querySelectorAll("button").forEach(function(e){e.setAttribute("aria-expanded",!1)})),r.setAttribute("aria-expanded",!e),t.hidden=e}})},function(e,n,t){var r,o,i;o=[n],void 0===(i="function"==typeof(r=function(e){"use strict";function n(e,n){return null==e?n:e}function t(e){return e.length}function r(e,n,t,r){return(e/=r/2)<1?t/2*e*e*e+n:t/2*((e-=2)*e*e+2)+n}Object.defineProperty(e,"__esModule",{value:!0}),e.getSlider=function(e){var o=void 0,i=void 0,u=void 0,c=void 0,a=void 0,l=n((e=e||{}).container,document.querySelector("*[data-simple-slider]")),d=n(e.prop,"left"),f=1e3*n(e.duration,.5),s=1e3*n(e.delay,3),p=n(e.unit,"%"),v=n(e.init,-100),y=n(e.show,0),h=n(e.end,100),m=e.paused,b=n(e.ease,r),x=n(e.onChange,0),g=n(e.onChangeEnd,0),S=Date.now;function E(){j()&&(i&&clearTimeout(i),function e(){u=S(),i=setTimeout(function(){u=S(),a=s,w(A()),e()},a)}())}function j(){return!m&&t(c)>1}function q(){j()&&(a=s-(S()-u),clearTimeout(i),i=0)}function w(e){for(var n=t(c);--n>=0;)c[n].style.zIndex=1;c[e].style.zIndex=3,c[o].style.zIndex=2,function e(n,t,r,i,u,c,a,l,f,s){function v(e,n,t){e[d]=s(f-l,n,t-n,a)+p}if(l>0){if(!(f-l<a))return n[d]=r+p,i[d]=c+p,void(g&&g(o,A()));v(n,t,r),v(i,u,c)}requestAnimationFrame(function(o){0===l&&(l=o),e(n,t,r,i,u,c,a,l,o,s)})}(c[o].style,y,h,c[e].style,v,y,f,0,0,b),o=e,x&&x(I(),o)}function A(){var e=o+1;return e>=t(c)?0:e}function I(){var e=o-1;return e<0?t(c)-1:e}function M(){document.hidden?q():E()}return document.addEventListener("visibilitychange",M),function(){if(t(l.children)>0){var n=l.style;n.position="relative",n.overflow="hidden",n.display="block",c=function(e,n,r,o,i,u){var c=void 0,a=[];n||(n=e.children);for(var l=t(n);--l>=0;)a[l]=n[l],(c=a[l].style).position="absolute",c.top=c.left=c.zIndex=0,c[u]=o+r;return c[u]=i+r,c.zIndex=1,a}(l,e.children,p,v,y,d),o=0,a=s}}(),c&&t(c)>1&&E(),{currentIndex:function(){return o},pause:q,resume:E,nextIndex:A,prevIndex:I,next:function(){w(A()),E()},prev:function(){w(I()),E()},change:w,reverse:function(){var e=v;v=h,h=e,o=Math.abs(o-(t(c)-1)),c=c.reverse()},dispose:function(){clearTimeout(i),document.removeEventListener("visibilitychange",M),c=l=i=d=f=s=v=h=m=o=a=x=g=null}}}})?r.apply(n,o):r)||(e.exports=i)},function(e,n){}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./_resources/js/app.js":
+/*!******************************!*\
+  !*** ./_resources/js/app.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var simpleslider = __webpack_require__(/*! simple-slider */ "./node_modules/simple-slider/dist/simpleslider.js");
+
+var slider = document.querySelector('.slider');
+
+if (slider) {
+  simpleslider.getSlider({
+    container: slider,
+    duration: 1.5,
+    delay: 5,
+    prop: 'opacity',
+    unit: '',
+    init: 0,
+    show: 1,
+    end: 0
+  });
+}
+
+;
+
+(function () {
+  // Get all the <h3> headings
+  var headings = document.querySelectorAll('.section--faqs h3');
+  Array.prototype.forEach.call(headings, function (heading) {
+    // Give each <h3> a toggle button child
+    // with the SVG plus/minus icon
+    heading.innerHTML = "\n      <button aria-expanded=\"false\">\n        ".concat(heading.textContent, "\n        <svg width=\"46\" height=\"46\" viewBox=\"0 0 46 46\">\n          <path fill=\"#83D6C1\" stroke=\"#0D1D48\" stroke-width=\"4\" stroke-miterlimit=\"10\" d=\"M32.1 23.1v16.2l-14-8.1L4 23.1l14.1-8.2 14-8.1z\"/>\n        </svg>\n\n      </button>\n    "); // Function to create a node list
+    // of the content between this <h3> and the next
+
+    var getContent = function getContent(elem) {
+      var elems = [];
+
+      while (elem.nextElementSibling && elem.nextElementSibling.tagName !== 'H3') {
+        elems.push(elem.nextElementSibling);
+        elem = elem.nextElementSibling;
+      } // Delete the old versions of the content nodes
+
+
+      elems.forEach(function (node) {
+        node.parentNode.removeChild(node);
+      });
+      return elems;
+    }; // Assign the contents to be expanded/collapsed (array)
+
+
+    var contents = getContent(heading); // Create a wrapper element for `contents` and hide it
+
+    var wrapper = document.createElement('div');
+    wrapper.hidden = true; // Add each element of `contents` to `wrapper`
+
+    contents.forEach(function (node) {
+      wrapper.appendChild(node);
+    }); // Add the wrapped content back into the DOM
+    // after the heading
+
+    heading.parentNode.insertBefore(wrapper, heading.nextElementSibling); // Assign the button
+
+    var btn = heading.querySelector('button');
+
+    btn.onclick = function () {
+      // Cast the state as a boolean
+      var expanded = btn.getAttribute('aria-expanded') === 'true' || false; // Close all others if this one isn't open
+
+      if (!expanded) {
+        wrapper.parentNode.querySelectorAll('div').forEach(function (node) {
+          node.hidden = true;
+        });
+        wrapper.parentNode.querySelectorAll('button').forEach(function (btn) {
+          btn.setAttribute('aria-expanded', false);
+        });
+      } // Switch the state
+
+
+      btn.setAttribute('aria-expanded', !expanded); // Switch the content's visibility
+
+      wrapper.hidden = expanded;
+    };
+  });
+})();
+
+/***/ }),
+
+/***/ "./_resources/scss/app.scss":
+/*!**********************************!*\
+  !*** ./_resources/scss/app.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./node_modules/simple-slider/dist/simpleslider.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/simple-slider/dist/simpleslider.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else { var mod; }
+})(this, function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  function getdef(val, def) {
+    return val == null ? def : val;
+  }
+
+  function len(arr) {
+    return arr.length;
+  }
+
+  function startSlides(containerElem, children, unit, startVal, visVal, trProp) {
+    var style = void 0,
+        imgs = [];
+
+    if (!children) {
+      children = containerElem.children;
+    }
+
+    var i = len(children);
+
+    while (--i >= 0) {
+      imgs[i] = children[i];
+      style = imgs[i].style;
+      style.position = 'absolute';
+      style.top = style.left = style.zIndex = 0;
+      style[trProp] = startVal + unit;
+    }
+
+    style[trProp] = visVal + unit;
+    style.zIndex = 1;
+
+    return imgs;
+  }
+
+  function defaultEase(time, begin, change, duration) {
+    return (time = time / (duration / 2)) < 1 ? change / 2 * time * time * time + begin : change / 2 * ((time -= 2) * time * time + 2) + begin;
+  }
+
+  function getSlider(options) {
+    options = options || {};
+    var actualIndex = void 0,
+        interval = void 0,
+        intervalStartTime = void 0,
+        imgs = void 0,
+        remainingTime = void 0;
+
+    var containerElem = getdef(options.container, document.querySelector('*[data-simple-slider]'));
+    var trProp = getdef(options.prop, 'left');
+    var trTime = getdef(options.duration, 0.5) * 1000;
+    var delay = getdef(options.delay, 3) * 1000;
+    var unit = getdef(options.unit, '%');
+    var startVal = getdef(options.init, -100);
+    var visVal = getdef(options.show, 0);
+    var endVal = getdef(options.end, 100);
+    var paused = options.paused;
+    var ease = getdef(options.ease, defaultEase);
+    var onChange = getdef(options.onChange, 0);
+    var onChangeEnd = getdef(options.onChangeEnd, 0);
+    var now = Date.now;
+
+    function reset() {
+      if (len(containerElem.children) > 0) {
+        var style = containerElem.style;
+        style.position = 'relative';
+        style.overflow = 'hidden';
+        style.display = 'block';
+
+        imgs = startSlides(containerElem, options.children, unit, startVal, visVal, trProp);
+        actualIndex = 0;
+        remainingTime = delay;
+      }
+    }
+
+    function setAutoPlayLoop() {
+      intervalStartTime = now();
+      interval = setTimeout(function () {
+        intervalStartTime = now();
+        remainingTime = delay;
+
+        change(nextIndex());
+
+        setAutoPlayLoop();
+      }, remainingTime);
+    }
+
+    function resume() {
+      if (isAutoPlay()) {
+        if (interval) {
+          clearTimeout(interval);
+        }
+
+        setAutoPlayLoop();
+      }
+    }
+
+    function isAutoPlay() {
+      return !paused && len(imgs) > 1;
+    }
+
+    function pause() {
+      if (isAutoPlay()) {
+        remainingTime = delay - (now() - intervalStartTime);
+        clearTimeout(interval);
+        interval = 0;
+      }
+    }
+
+    function reverse() {
+      var newEndVal = startVal;
+      startVal = endVal;
+      endVal = newEndVal;
+      actualIndex = Math.abs(actualIndex - (len(imgs) - 1));
+      imgs = imgs.reverse();
+    }
+
+    function change(newIndex) {
+      var count = len(imgs);
+      while (--count >= 0) {
+        imgs[count].style.zIndex = 1;
+      }
+
+      imgs[newIndex].style.zIndex = 3;
+      imgs[actualIndex].style.zIndex = 2;
+
+      anim(imgs[actualIndex].style, visVal, endVal, imgs[newIndex].style, startVal, visVal, trTime, 0, 0, ease);
+
+      actualIndex = newIndex;
+
+      if (onChange) {
+        onChange(prevIndex(), actualIndex);
+      }
+    }
+
+    function next() {
+      change(nextIndex());
+      resume();
+    }
+
+    function prev() {
+      change(prevIndex());
+      resume();
+    }
+
+    function nextIndex() {
+      var newIndex = actualIndex + 1;
+      return newIndex >= len(imgs) ? 0 : newIndex;
+    }
+
+    function prevIndex() {
+      var newIndex = actualIndex - 1;
+      return newIndex < 0 ? len(imgs) - 1 : newIndex;
+    }
+
+    function dispose() {
+      clearTimeout(interval);
+      document.removeEventListener('visibilitychange', visibilityChange);
+
+      imgs = containerElem = interval = trProp = trTime = delay = startVal = endVal = paused = actualIndex = remainingTime = onChange = onChangeEnd = null;
+    }
+
+    function currentIndex() {
+      return actualIndex;
+    }
+
+    function anim(insertElem, insertFrom, insertTo, removeElem, removeFrom, removeTo, transitionDuration, startTime, elapsedTime, easeFunc) {
+      function setProp(elem, from, to) {
+        elem[trProp] = easeFunc(elapsedTime - startTime, from, to - from, transitionDuration) + unit;
+      }
+
+      if (startTime > 0) {
+        if (elapsedTime - startTime < transitionDuration) {
+          setProp(insertElem, insertFrom, insertTo);
+          setProp(removeElem, removeFrom, removeTo);
+        } else {
+          insertElem[trProp] = insertTo + unit;
+          removeElem[trProp] = removeTo + unit;
+
+          if (onChangeEnd) {
+            onChangeEnd(actualIndex, nextIndex());
+          }
+          return;
+        }
+      }
+
+      requestAnimationFrame(function (time) {
+        if (startTime === 0) {
+          startTime = time;
+        }
+
+        anim(insertElem, insertFrom, insertTo, removeElem, removeFrom, removeTo, transitionDuration, startTime, time, easeFunc);
+      });
+    }
+
+    function visibilityChange() {
+      if (document.hidden) {
+        pause();
+      } else {
+        resume();
+      }
+    }
+
+    document.addEventListener('visibilitychange', visibilityChange);
+    reset();
+
+    if (imgs && len(imgs) > 1) {
+      resume();
+    }
+
+    return {
+      currentIndex: currentIndex,
+      pause: pause,
+      resume: resume,
+      nextIndex: nextIndex,
+      prevIndex: prevIndex,
+      next: next,
+      prev: prev,
+      change: change,
+      reverse: reverse,
+      dispose: dispose
+    };
+  }
+
+  exports.getSlider = getSlider;
+});
+
+/***/ }),
+
+/***/ 0:
+/*!***************************************************************!*\
+  !*** multi ./_resources/js/app.js ./_resources/scss/app.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/johnpuddephatt/Sites/yorspace11ty/_resources/js/app.js */"./_resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/johnpuddephatt/Sites/yorspace11ty/_resources/scss/app.scss */"./_resources/scss/app.scss");
+
+
+/***/ })
+
+/******/ });

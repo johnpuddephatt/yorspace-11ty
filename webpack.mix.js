@@ -14,8 +14,8 @@ let mix = require('laravel-mix');
 mix.js('_resources/js/app.js', 'assets/')
   .sass('_resources/scss/app.scss', 'assets/')
   .copy('_resources/fonts', 'assets/fonts')
-  .copy('_resources/images', 'assets/images');
-
+  .copy('_resources/images', 'assets/images')
+  .browserSync('_site.yorspace11ty.localhost');
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
