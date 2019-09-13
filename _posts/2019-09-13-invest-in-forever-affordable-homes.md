@@ -16,8 +16,10 @@ We are using a community share offer to raise money for homes in the community a
 
 Full details of the offer and a link to invest can be found here: <https://www.ethex.org.uk/YorSpace>
 
-**Share Launch Event**
+## **Share Launch Event**
 
 If you want to meet us and find out more then please join YorSpace at the launch of our community share offer and take the opportunity to invest in a project which can help shape housing development in York and be a beacon for future housing development in the UK. 
 
-The event is being held at the [National Centre for Early Music](http://www.ncem.co.uk/) at 6.30pm on 19th September. Book your place by clicking [HERE](https://www.eventbrite.co.uk/e/yorspace-bringing-a-fairer-kind-of-housing-to-york-tickets-70791947621)
+The event is being held at the [National Centre for Early Music](http://www.ncem.co.uk/) at 6.30pm on 19th September. 
+
+Book your place by clicking [HERE](https://www.eventbrite.co.uk/e/yorspace-bringing-a-fairer-kind-of-housing-to-york-tickets-70791947621)
