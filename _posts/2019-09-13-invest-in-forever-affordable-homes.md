@@ -5,7 +5,7 @@ tags: Forever Affordable
 layout: post
 image:
   caption: Community Share launch event details
-  file: /uploads/share-launch-eventbrite.jpeg
+  file: /uploads/share-launch-eventbrite-1.jpeg
   show_on_post: true
 ---
 We have a vision of revolutionising how housing is funded, delivered and owned in York - providing a tangible solution to the UK housing crisis..
