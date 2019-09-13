@@ -6,7 +6,7 @@ layout: post
 image:
   caption: Community Share launch event details
   file: /uploads/1.png
-  show_on_post: true
+  show_on_post: false
 ---
 We have a vision of revolutionising how housing is funded, delivered and owned in York - providing a tangible solution to the UK housing crisis..
 
