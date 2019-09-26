@@ -68,10 +68,12 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
 }
 
 .home-plans--plan--header {
   margin-top: $small-spacing;
+  width: 100%;
   br {
     display: none;
     @media screen and (min-width: $medium-screen) {
