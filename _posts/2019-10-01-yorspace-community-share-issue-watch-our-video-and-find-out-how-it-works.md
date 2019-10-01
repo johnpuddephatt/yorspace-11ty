@@ -4,7 +4,7 @@ date: 2019-10-01T13:37:45.586Z
 tags: '#communityshares #communityinvest #york '
 layout: post
 image:
-  caption: Yorspace Community Shares video
+  caption: Yorspace Community Share Launch
   file: /uploads/share-launch.jpg
   show_on_post: false
 ---
