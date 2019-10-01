@@ -6,7 +6,7 @@ layout: post
 image:
   caption: Yorspace Community Shares video
   file: /uploads/share-launch.jpg
-  show_on_post: true
+  show_on_post: false
 ---
 We've been flat out at Yorspace throughout September, with the launch of our £475,000 Community Share Issue. The official launch event for investors took place at the National Centre for Early Music in York on the 19th September, nicely timed with the news that we've been awarded £100,000 of match funding by the Community Shares Unit. 
 
