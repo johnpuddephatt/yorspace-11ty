@@ -1,5 +1,7 @@
 ---
-title: Yorspace Community Share Issue - watch our video and find out how it works
+title: >-
+  Yorspace Community Share Issue - watch our video and find out how you can
+  invest!
 date: 2019-10-01T13:37:45.586Z
 tags: '#communityshares #communityinvest #york '
 layout: post
