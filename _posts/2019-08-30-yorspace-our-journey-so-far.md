@@ -10,8 +10,6 @@ image:
   file: /uploads/sue-stickies-1-.jpg
   show_on_post: true
 ---
-**Our Ambition for York**
-
 It seems incredible that we are fast approaching “boots on the ground” stage in our Lowfield Green development. Having worked so hard for so long to realise our ambition to build permanently affordable homes in York, we are really pleased to be within touching distance of that dream becoming a reality.
 
 Those of you who have followed us over the past 5 years will know we’ve had our ups and downs, but our perseverance and passion has paid off, and with our Share Issue going live soon, this seems like a good time to tell you how we got here.

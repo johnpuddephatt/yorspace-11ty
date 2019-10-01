@@ -16,6 +16,7 @@ if(slider) {
 
 
 (function() {
+
   // Get all the <h3> headings
   const headings = document.querySelectorAll('.section--faqs h3')
 

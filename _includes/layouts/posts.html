@@ -9,10 +9,12 @@ layout: page
         {% include cloudinary.html, img: post.data.image.file, width: "500", height: "500" %}
       </div>
       <div class="home-blog--item--text">
-        <h3 class="home-blog--item--title">{{ post.data.title }}</h3>
         <div class="home-blog--item--date">{{ post.date | date: site.date_format }}</div>
+        <h3 class="home-blog--item--title">{{ post.data.title }}</h3>
+        <p class="home-blog--item--excerpt">{% excerpt post %}</p>
+        <span class="home-blog--item--read-more">Read more</span>
+
       </div>
-      <span class="home-blog--item--read-more">Read more</span>
     </a>
   {% endfor %}
 </div>

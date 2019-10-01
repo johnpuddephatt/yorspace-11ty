@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
   eleventyConfig.addLayoutAlias('posts', 'layouts/posts.html');
 
+  eleventyConfig.addShortcode('excerpt', article => extractExcerpt(article));
 
   eleventyConfig.addPlugin(svgContents);
 
@@ -82,3 +83,29 @@ module.exports = function(eleventyConfig) {
     ]
   };
 };
+
+function extractExcerpt(article) {
+  if (!article.hasOwnProperty('templateContent')) {
+    console.warn('Failed to extract excerpt: Document has no property "templateContent".');
+    return null;
+  }
+
+  let excerpt = null;
+  const content = article.templateContent;
+
+  // The start and end separators to try and match to extract the excerpt
+
+
+  const startPosition = content.indexOf('<p>');
+  const endPosition = content.indexOf('</p>');
+  const excerptLength = 150;
+
+  if (startPosition !== -1 && endPosition !== -1) {
+    excerpt = content.substring(startPosition + 3, endPosition).trim().substring(0,excerptLength) + '...';
+  }
+  else {
+    excerpt = '';
+  }
+
+  return excerpt;
+}
