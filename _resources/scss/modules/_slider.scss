@@ -1,0 +1,31 @@
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  margin-top: $base-spacing;
+  padding-top: 56.25%;
+  @media screen and (min-width: $large-screen) {
+    padding-top: 100%;
+    margin-top: 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.slider-credit {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparentize(white, .25);
+  padding: .5em 1em;
+  text-align: center;
+  font-size: modular-scale(-1);
+}

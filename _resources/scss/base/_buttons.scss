@@ -34,3 +34,13 @@
     }
   }
 }
+
+.button__ghost {
+  background-color: transparent;
+  border: $base-border;
+  color: $base-font-color;
+  &:hover {
+    background-color: $base-font-color;
+    color: white;
+  }
+}

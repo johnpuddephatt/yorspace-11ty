@@ -5,7 +5,12 @@ layout: default
   <div class="container">
     <h1 class="page-title page-title__home">{{ title | renderUsingMarkdown}}</h1>
     <div class="page-subtitle page-subtitle__home">{{ subtitle | escape | newline_to_br }}</div>
+    <button class="page-header--button button button__ghost trailer-button" data-iframe="M49GytLBMUs">Watch our share offer video</button>
     {{ "/_resources/images/hero.svg" | svgContents }}
+  </div>
+  <div class="single-listing--trailer">
+    <div class="single-listing--trailer--iframe"></div>
+    <button class="close-trailer-button">Close trailer</button>
   </div>
 </header>
 
@@ -31,5 +36,5 @@ layout: default
 
 
 <section class="section section--faqs">
-  {% include components/faqs.html, title:"Frequently asked questions", location="home" %}
+  {% include components/faqs.html, title:"Frequently asked questions", location: "home" %}
 </section>

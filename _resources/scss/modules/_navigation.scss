@@ -39,6 +39,11 @@ label[for="nav-trigger"] {
     &:hover {
       color: $orange;
     }
+
+    &.button {
+      line-height: 1;
+      color: white;
+    }
   }
 
   @media screen and (max-width: $medium-screen) {

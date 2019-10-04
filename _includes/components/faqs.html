@@ -1,6 +1,7 @@
 <div class="container container__narrow container--faqs">
   <h2 class="section-heading">{{ title | default: 'FAQS' }}</h2>
-  {% assign homeFaqs = collections.faqs | whereContains :"data.location","home"  %}
+
+  {% assign homeFaqs = collections.faqs | whereContains : "data.location",location  %}
 
 
   {% for faq in homeFaqs %}

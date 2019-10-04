@@ -29,5 +29,10 @@
       height: auto;
       z-index: -1;
     }
+
+    .page-header--button {
+      margin-right: auto;
+      margin-top: $base-spacing;
+    }
   }
 }

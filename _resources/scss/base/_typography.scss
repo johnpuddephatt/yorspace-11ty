@@ -71,6 +71,11 @@ hr {
   margin-bottom: 1.5 * $base-spacing;
 }
 
+.muted {
+  font-size: modular-scale(-1);
+  opacity: .75;
+}
+
 
 .page-title, .post-title {
   font-size: modular-scale(5);

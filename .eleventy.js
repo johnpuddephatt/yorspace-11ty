@@ -54,7 +54,8 @@ module.exports = function(eleventyConfig) {
       const reducedKey = keys.reduce((object, key) => {
         return object[key];
       }, item);
-      return (reducedKey.indexOf(value) ? item : false);
+
+      return (reducedKey.indexOf(value) == -1 ? false : item);
     });
   });
 

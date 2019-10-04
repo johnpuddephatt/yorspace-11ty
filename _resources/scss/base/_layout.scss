@@ -16,6 +16,9 @@ body {
 
 body {
   background-color: white;
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 .container {
