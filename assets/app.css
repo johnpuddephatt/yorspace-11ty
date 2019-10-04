@@ -1729,6 +1729,8 @@ label[for=nav-trigger] {
 
 .single-listing--trailer.lights-out .close-trailer-button {
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0.375rem;
   z-index: 9999999;
 }

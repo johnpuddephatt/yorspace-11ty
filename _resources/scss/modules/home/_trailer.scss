@@ -31,6 +31,8 @@
     }
     .close-trailer-button {
       position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: $small-spacing/2;
       z-index: 9999999;
     }
