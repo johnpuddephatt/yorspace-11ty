@@ -4,10 +4,8 @@ location:
 - home
 - invest
 ---
-Full details about how to invest will be made available when the share offer goes live, which is expected to be autumn 2019.
+Our share offer is hosted by Ethex, a recognised ethical investment platform, so you can be assured that a trusted third party is holding your money securely.
 
-We’ll be contacting everyone on our mailing list to notify them of the share offer launch, so if you want to be notified, <a href="https://yorspace.us16.list-manage.com/subscribe?u=87de39e1c0b0e9d7ec221831c&id=6979cefe92" target="_blank">please sign up</a>. If you've pledged to invest in YorSpace previously then we have your contact details on file and will be in touch.
+We advise all potential investors to read our share offer document and business plan, which can be found on the Ethex site.
 
-When the share offer is live we'll be running events where we’ll present our offer, giving interested people the opportunity to find out more, meet the YorSpace team and ask questions.
-
-Our share offer will be hosted by Ethex, a recognised ethical investment platform, so you can be assured that a trusted third party is holding your money securely.
+To invest, head to [our page on the Ethex site](https://www.ethex.org.uk/YorSpace), and look for the apply for shares button.
