@@ -11,7 +11,7 @@ layout: page
       <div class="home-blog--item--text">
         <div class="home-blog--item--date">{{ post.date | date: site.date_format }}</div>
         <h3 class="home-blog--item--title">{{ post.data.title }}</h3>
-        <p class="home-blog--item--excerpt">{% excerpt post %}</p>
+        <p class="home-blog--item--excerpt">{{ post.templateContent | strip_html | truncate: 150, '...' }}</p>
         <span class="home-blog--item--read-more">Read more</span>
 
       </div>
