@@ -1,6 +1,6 @@
 ---
 title: Lowfield Green appoints Croft Farm as Preferred Partner
-date: 2019-10-24T08:02:02.547Z
+date: 2019-10-24
 tags: '#passivhaus #lowfieldgreen #co-operative #communityshares'
 layout: post
 image:

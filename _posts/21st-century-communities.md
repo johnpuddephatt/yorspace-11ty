@@ -1,6 +1,6 @@
 ---
 title: 21st Century Communities
-date: 2019-09-10T12:45:46.099Z
+date: 2019-09-10
 tags: One Planet York; Yorspace; Community; Sustainability; Affordability;
 layout: post
 image:
@@ -12,7 +12,7 @@ image:
 
 
 
-The past few weeks has been a hive of activity for Yorspace, as we make the transition from planning to delivery. We’re within touching distance of starting on site with 19 homes at Lowfield Green later in 2019, with most of them already allocated. These are exciting times for us, and for York, as this pioneering development, which combines affordability, community and sustainability, takes shape, delivering something truly unique for the City. 
+The past few weeks has been a hive of activity for Yorspace, as we make the transition from planning to delivery. We’re within touching distance of starting on site with 19 homes at Lowfield Green later in 2019, with most of them already allocated. These are exciting times for us, and for York, as this pioneering development, which combines affordability, community and sustainability, takes shape, delivering something truly unique for the City.
 
 
 
@@ -28,7 +28,7 @@ Yorspace is not afraid to be radical: We want to change the way homes are develo
 
 
 
-Over the next ten years, we want to help develop up to five new co-operative communities to meet the growing need for affordable homes in the long term. All our developments will differ slightly, but all will help build new communities (shared indoor and outdoor space, car sharing and day to day management) living in environmentally sustainable homes which are affordable and secure for life. 
+Over the next ten years, we want to help develop up to five new co-operative communities to meet the growing need for affordable homes in the long term. All our developments will differ slightly, but all will help build new communities (shared indoor and outdoor space, car sharing and day to day management) living in environmentally sustainable homes which are affordable and secure for life.
 
 
 
@@ -40,7 +40,7 @@ We create affordability through taking out developer profit reducing overheads. 
 
 
 
-Finally, we create sustainability by designing homes which are low carbon and encourage lifestyles which maximise walking, cycling and public transport, limiting the use of private vehicles. We will also encourage shared use of cars, tools and space to keep day to day life affordable and reduce waste. We support One Planet principles which keep consumption within the planet’s resources. 
+Finally, we create sustainability by designing homes which are low carbon and encourage lifestyles which maximise walking, cycling and public transport, limiting the use of private vehicles. We will also encourage shared use of cars, tools and space to keep day to day life affordable and reduce waste. We support One Planet principles which keep consumption within the planet’s resources.
 
 
 
@@ -52,7 +52,7 @@ In early September we launched our first Community Share Issue, which will bring
 
 
 
-If you want to be part of our exciting new future, you can [invest](https://yorspace.org/invest/)  [live ](https://yorspace.org/live/) or [join](https://yorspace.org/join/) here. 
+If you want to be part of our exciting new future, you can [invest](https://yorspace.org/invest/)  [live ](https://yorspace.org/live/) or [join](https://yorspace.org/join/) here.
 
 
 

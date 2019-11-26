@@ -1,6 +1,6 @@
 ---
 title: Positive pioneering – creative solutions to the property crisis
-date: 2019-11-20T14:09:45.936Z
+date: 2019-11-20
 layout: post
 image:
   file: /uploads/19554824_1672047366204679_7405312018820073336_n.jpg

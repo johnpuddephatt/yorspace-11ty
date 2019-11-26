@@ -2,7 +2,7 @@
 layout: page
 ---
 <div>
-  {% assign posts = collections.posts | sort: post.data.date | reverse %}
+  {% assign posts = collections.posts | reverse %}
   {% for post in posts %}
     <a href="{% if post.data.external_link %}{{ post.data.external_link }}{% else %}{{ post.url }}{% endif %}" class="home-blog--item horizontal" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="{{ forloop.index | minus: 1 |  times:200 }}">
       <div class="home-blog--item--image">

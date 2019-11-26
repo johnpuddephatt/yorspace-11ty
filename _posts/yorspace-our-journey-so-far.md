@@ -1,6 +1,6 @@
 ---
 title: Yorspace - Our journey so far
-date: 2019-08-30T11:52:49.709Z
+date: 2019-08-30
 tags: >-
   #yorspace #communityledhousing #oneplanetyork #communitylandtrust
   #communitybenefitsociety

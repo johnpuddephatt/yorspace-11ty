@@ -1,6 +1,6 @@
 ---
 title: Invest in forever affordable homes
-date: 2019-09-13T09:36:34.914Z
+date: 2019-09-13
 tags: Forever Affordable
 layout: post
 image:
