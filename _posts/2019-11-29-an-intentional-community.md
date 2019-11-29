@@ -68,4 +68,4 @@ _… and some final thoughts_
 
 •	“And again, such hard work but so worth it!”
 
-If, like me, you’re fascinating and excited in equal measure by Yorspace, find out more at <https://yorspace.org/>  or to invest, go to <https://www.ethex.org.uk/YorSpace>
+If, like me, you’re fascinated and excited in equal measure by Yorspace, find out more at <https://yorspace.org/>  or to invest, go to <https://www.ethex.org.uk/YorSpace>
