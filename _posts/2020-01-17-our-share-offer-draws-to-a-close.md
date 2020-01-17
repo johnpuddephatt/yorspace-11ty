@@ -1,12 +1,12 @@
 ---
-title: Our share offer draws to a close
+title: Refections as our share offer draws to a close
 date: 2020-01-17T22:22:11.029Z
 layout: post
 image:
   file: /uploads/image18.png
   show_on_post: true
 ---
-As we approach the end of our Share Issue, some thoughts from Jane Hustwit.
+As we approach the end of our Share Issue, some thoughts from YorSpace supporter Jane Hustwit.
 
 Last autumn I became preoccupied with Yorspace: why it matters so much; how I could support it; what a positive difference it will make to York - albeit in a small way.  Its revolutionary approach to housing development, and its pioneering energy, revived my downcast political spirits.  Helping to encourage the 170 investors in the successful community share offer, raising nearly £400,000, was a fine challenge to take on.
 
