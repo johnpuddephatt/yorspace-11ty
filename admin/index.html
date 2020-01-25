@@ -15,7 +15,7 @@
         var entry = this.props.entry;
         var image = entry.getIn(['data', 'image', 'file']);
 
-        var bg = this.props.getAsset(image);
+        // var bg = this.props.getAsset(image);
         return h('div', {},
           h('header', {className: "post-header"},
             h('div', {className: "container"},
@@ -25,7 +25,7 @@
           h('div', {"className": "post-image"},
             h('div', {className: "container"},
               h('figure', {className: "post-header--image-figure"},
-                h('img', {className: "post-header--image", src: bg ? bg.toString() : '' }),
+                h('img', {className: "post-header--image", src: image }),
                 h('figcaption',{}, entry.getIn(['data', 'image', 'caption']))
               ),
             )
