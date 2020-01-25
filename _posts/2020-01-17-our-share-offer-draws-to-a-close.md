@@ -31,6 +31,6 @@ As for the City of York, Yorspace is supporting the development of a healthy hou
 
 ### So how can you help?
 
-Yorspace needs all the investment it can get between now and the 31st January. So if you, or anyone you know, has £250 or more to invest in creating forever affordable homes for local people, please show your support by going to [the Ethex website](www.ethex.org.uk/yorspace)
+Yorspace needs all the investment it can get between now and the 31st January. So if you, or anyone you know, has £250 or more to invest in creating forever affordable homes for local people, please show your support by [going to the Ethex website](https://www.ethex.org.uk/yorspace/).
 
 As one of our lovely investors put it, “Disrupting York’s defective housing market whilst creating sustainable, affordable, community designed homes: a fine combination” (Julia Unwin, ex CEO, JRF).
