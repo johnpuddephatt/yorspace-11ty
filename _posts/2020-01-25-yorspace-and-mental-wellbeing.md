@@ -4,7 +4,7 @@ date: 2020-01-25T17:22:38.461Z
 layout: post
 image:
   file: /uploads/image Johnny_landscape.jpg
-  show_on_post: false
+  show_on_post: true
 ---
 By Johnny Wells
 
