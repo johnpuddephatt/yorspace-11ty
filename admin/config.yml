@@ -35,6 +35,7 @@ collections:
       - {label: "Subtitle", name: "subtitle", widget: "text", required: false}
       - {label: "Content", name: "body", widget: "markdown", required: false}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Documents", name: "documents", widget: "file" }
   - name: "faqs" # Used in routes, e.g., /admin/collections/blog
     label: "FAQs" # Used in the UI
     editor:
