@@ -46,7 +46,7 @@
           h('header', {className: "page-header"},
             h('div', {className: "container"},
               h('h1', {className: "page-title"}, entry.getIn(['data', 'title'])),
-              h('div', {"className": "page-subtitle"}, this.props.widgetFor('subtitle'))
+              h('div', {"className": "page-subtitle"}, entry.getIn(['data', 'subtitle']))
             )
           ),
           h('div', {className: "page-content"},
