@@ -1,16 +1,19 @@
 var simpleslider = require('simple-slider');
 
-var slider = document.querySelector('.slider');
-if(slider) {
-  simpleslider.getSlider({
-    container: slider,
-    duration: 1.5,
-    delay: 5,
-    prop: 'opacity',
-    unit: '',
-    init: 0,
-    show: 1,
-    end: 0,
+var sliders = document.querySelectorAll('.slider');
+if(sliders) {
+  sliders.forEach(slider => {
+    console.log(slider);
+    simpleslider.getSlider({
+      container: slider,
+      duration: 1.5,
+      delay: 5,
+      prop: 'opacity',
+      unit: '',
+      init: 0,
+      show: 1,
+      end: 0,
+    });
   });
 };
 
