@@ -1,5 +1,5 @@
 ---
-title: How do share withdrawals work?
+title: I'm an investor. How will my share withdrawals work?
 location:
   - invest
 ---
