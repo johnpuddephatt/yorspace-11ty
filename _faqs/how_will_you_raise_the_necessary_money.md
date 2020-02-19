@@ -1,10 +1,12 @@
 ---
 title: Do you have any other sources of money?
 location:
-- invest
+  - invest
 ---
-We secured grant money to cover the 15% deposit for purchasing the land. Our £475,000 share offer will raise the money to buy the land, cover fees and YorSpace’s development costs during the build phase.
+We secured grant money to cover the 15% deposit for purchasing the land. Our £420,000 share offer has raised the money to buy the land, cover fees and YorSpace’s development costs during the build phase.
 
-We’ve secured the support of the Booster Programme – funded by Power to Change and run by the Community Shares Unit – meaning up to £100,000 is available to match applications for shares from the public. This means for every pound invested by individuals, another pound will be invested in shares by the Booster Programme, up to a maximum of £100,000.
+We have also received public sector funding towards professional costs of Lowfield Green from Power to Change and Homes England, and are currently talking to funders about further continuation funding.
 
-Once our first development is complete, we’ll have an income stream that enables us to undertake further projects in York
+An important part of our funding strategy is ongoing donations from members and supporters. This will give us an invaluable fighting fund to continue to explore further developments across the City, and we are already working with City of York Council and other partners to scale up our work.
+
+Once our first development is complete, we’ll have an income stream that enables us to undertake further projects in York.
