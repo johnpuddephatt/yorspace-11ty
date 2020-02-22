@@ -22,7 +22,11 @@ We will also start to look at other sites across the City with our eye on develo
 
 ## Stay with us...
 
-The real work starts now: We still need to keep funds coming in to pay for ongoing professional help to get Lowfield Green up and running, as well as support for developments. You can donate anytime via our website here https://yorspace.org - either as a one off or a regular payment. All contributions are much appreciated.
+The real work starts now: We still need to keep funds coming in to pay for ongoing professional help to get Lowfield Green up and running, as well as support for developments. You can donate anytime via our website here <!--StartFragment-->
+
+<https://yorspace.org/>
+
+<!--EndFragment--> - either as a one off or a regular payment. All contributions are much appreciated.
 
 Soon you'll be hearing more about Lowfield Green Mutual Home Ownership Society (MHOS), the resident led co-op which will be managing the construction phase before moving in and then managing the homes in future. 
 
