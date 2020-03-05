@@ -5,7 +5,9 @@ layout: post
 image:
   show_on_post: true
   file: /uploads/eqhmtncwoakhl7f.jpeg
-  caption: Director James Newton with NCLTN CEO Catherine Harrington at MHCLG
+  caption: >-
+    Director James Newton with National CLT Network CEO Catherine Harrington at
+    Ministry of Housing, Communities & Local Government
 ---
 # The Spring Budget is due to be announced on 11 March 2020, will the Community Housing Fund be affected?
 
