@@ -4,7 +4,7 @@ date: 2020-04-27T18:21:23.903Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/yorspace-directors-2020-photo-collage.jpg
+  file: /uploads/yorspace-directors.png
   caption: "YorSpace Directors 2020, clockwise from top left: Sue, Dave, Imelda,
     James, John and Darren"
 ---
