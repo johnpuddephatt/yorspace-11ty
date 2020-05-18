@@ -1,0 +1,9 @@
+.site-banner {
+  background-color: $dark-blue;
+  color: white;
+  text-align: center;
+  padding: $small-spacing 0;
+  .button {
+    margin-left: $small-spacing;
+  }
+}

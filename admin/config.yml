@@ -5,6 +5,17 @@ backend:
 media_folder: "uploads" # Media files will be stored in the repo under uploads
 
 collections:
+  - name: "site" # Used in routes, e.g., /admin/collections/blog
+    label: "Site" # Used in the UI
+    file: "/src/_data/site.json"
+    fields:
+      - label: Site wide banner
+        name: banner
+        widget: object
+        fields:
+          - { label: 'Text', name: 'text', widget: 'string' }
+          - { label: 'Button text', name: 'button_text', widget: 'string' }
+          - { label: 'Button URL', name: 'button_url', widget: 'string' }
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     summary: "{{title}} – {{day}}.{{month}}.{{year}}"

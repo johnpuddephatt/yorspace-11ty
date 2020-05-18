@@ -1,0 +1,12 @@
+{% if site.banner.text %}
+  <div class="site-banner">
+    <div class="container">
+      {{ site.banner.text }}
+      {% if site.banner.button_url and site.banner.button_text %}
+        <a class="button" href="{{ site.banner.button_url }}">
+          {{ site.banner.button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

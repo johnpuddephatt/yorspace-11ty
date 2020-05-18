@@ -4,6 +4,11 @@
   "email": "info@yorspace.org",
   "cloudinary": "letsdance",
   "baseurl": "",
+  "banner": {
+    "text": "Affordable homes are available at Lowfield Green",
+    "button_text": "Apply now",
+    "button_url": "mailto:community.lghc@gmail.com"
+  },
   "url": "https://www.yorspace.org",
   "footer": "**YorSpace Ltd** is a registered Community Benefit Society, registered number 7476",
   "social": [
