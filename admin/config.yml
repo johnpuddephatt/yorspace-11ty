@@ -13,11 +13,14 @@ collections:
       - label: "Banner"
         name: "banner"
         file: "_data/site.json"
-        widget: "object"
-        fields:
-          - { label: 'Text', name: 'text', widget: 'string' }
-          - { label: 'Button text', name: 'button_text', widget: 'string' }
-          - { label: 'Button URL', name: 'button_url', widget: 'string' }
+        fields: # The fields for each document, usually in front matter
+          - label: "Site-wide banner"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: 'Text', name: 'text', widget: 'string', required: false }
+              - { label: 'Button text', name: 'button_text', widget: 'string', required: false }
+              - { label: 'Button URL', name: 'button_url', widget: 'string', required: false }
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     summary: "{{title}} – {{day}}.{{month}}.{{year}}"
