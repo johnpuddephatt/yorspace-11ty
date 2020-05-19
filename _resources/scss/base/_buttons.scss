@@ -44,3 +44,15 @@
     color: white;
   }
 }
+
+.button__ghost-inverted {
+  background-color: transparent;
+  border: $base-border;
+  border-color: white;
+  color: white;
+  &:hover {
+    background-color: $action-color;
+    border-color: $action-color;
+    color: white;
+  }
+}
