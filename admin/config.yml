@@ -7,10 +7,12 @@ media_folder: "uploads" # Media files will be stored in the repo under uploads
 collections:
   - name: "site" # Used in routes, e.g., /admin/collections/blog
     label: "Site" # Used in the UI
+    editor:
+      preview: false
     files:
       - label: "Banner"
         name: "banner"
-        file: "/src/_data/site.json"
+        file: "_data/site.json"
         fields:
           - { label: 'Text', name: 'text', widget: 'string' }
           - { label: 'Button text', name: 'button_text', widget: 'string' }
