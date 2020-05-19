@@ -1,5 +1,6 @@
 {
   "button_url": "test",
+  "banner.button_url": "but maybe not",
   "date_format": "%d.%m.%y ",
   "banner": {
     "text": "Affordable homes are available at Lowfield Green",
@@ -20,8 +21,10 @@
   ],
   "cloudinary": "letsdance",
   "url": "https://www.yorspace.org",
+  "banner.text": "i thought this",
   "mailchimp": "https://yorspace.us16.list-manage.com/subscribe?u=87de39e1c0b0e9d7ec221831c&id=c3ded908a6",
   "title": "YorSpace",
+  "banner.button_text": "was nested",
   "button_text": "test",
   "footer": "**YorSpace Ltd** is a registered Community Benefit Society, registered number 7476",
   "email": "info@yorspace.org",
