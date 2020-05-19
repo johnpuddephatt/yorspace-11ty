@@ -1,10 +1,12 @@
 {
+  "button_url": "test",
   "date_format": "%d.%m.%y ",
   "banner": {
     "text": "Affordable homes are available at Lowfield Green",
     "button_text": "Apply now",
     "button_url": "mailto:community.lghc@gmail.com"
   },
+  "text": "now?",
   "social": [
     {
       "twitter": "yorspace"
@@ -20,6 +22,7 @@
   "url": "https://www.yorspace.org",
   "mailchimp": "https://yorspace.us16.list-manage.com/subscribe?u=87de39e1c0b0e9d7ec221831c&id=c3ded908a6",
   "title": "YorSpace",
+  "button_text": "test",
   "footer": "**YorSpace Ltd** is a registered Community Benefit Society, registered number 7476",
   "email": "info@yorspace.org",
   "description": "We’re bringing a better kind of housing to York\n",
