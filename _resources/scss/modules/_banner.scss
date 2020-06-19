@@ -5,5 +5,6 @@
   padding: $small-spacing 0;
   .button {
     margin-left: $small-spacing;
+    margin-top: -$base-border-width;
   }
 }
