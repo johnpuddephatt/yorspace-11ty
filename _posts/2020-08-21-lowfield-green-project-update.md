@@ -5,6 +5,7 @@ layout: post
 image:
   show_on_post: false
   file: /uploads/3d_vis_6.jpg
+  caption: ""
 ---
 # What have you been doing all this time?!
 
@@ -32,7 +33,7 @@ All this work has involved lots of workshops and discussions amongst the teams a
 
 ## Challenges
 
-Unfortunately, we are yet to hear any news on the Government's announcement on the Community Housing Fund (CHF) and this has left a big hole in our budget that we're working hard to fill. What's been reassuring is that this has really galvanised the community and, in addition to revisiting our build budget, a whole host of alternative finance avenues are being explored by our team as we discuss options with City of York Council, other grant funders and lenders.
+Unfortunately, we are yet to hear any news on the Government's announcement on the Community Housing Fund (CHF) and this has left a big hole in our budget that we're working hard to fill. What's been reassuring is that this has really galvanised the YorSpace and Co-op community and, in addition to revisiting our build budget, a whole host of alternative finance avenues are being explored by our team as we discuss options with City of York Council, other grant funders and lenders.
 
 The key for YorSpace is to maintain our ethos as an organisation and to ensure we balance both the principle of creating affordable homes for our residents whilst ensuring that what we build is sustainable both now and in the future.
 
@@ -40,10 +41,12 @@ Another source of delay is as a result of the effects of covid 19 on the constru
 
 ## What next?
 
-YorSpace continues to work with our partners and over the summer have started to finalise the detailed plans with our consultants to get to an agreed contract sum and final specification for the homes. This will ensure that YorSpace and Lowfield Green Housing Co-op will be shovel ready and poised to start work onsite when our finance and funding package is agreed.
+YorSpace continues to work with our partners and over the summer have started to finalise the detailed plans with our consultants to get to an agreed contract sum and final specification for the homes. This will ensure that YorSpace and Lowfield Green Housing Co-op will be *shovel ready* and poised to start work onsite when our finance and funding package is agreed.
 
-We are awaiting responses back from applications to access funding for both our innovative and affordable mutual home ownership (MHO) as well as our low carbon approach to build the homes from locally sourced construction materials.
+We are awaiting responses back from applications to access funding for both our innovative and affordable mutual home ownership (MHO) as well as our low carbon approach to build the homes from locally sourced, natural construction materials.
 
 Whilst we make progress on alternative funding routes we still continue to support the National CLT Network's campaign to get the CHF extended and encourage our members to write to their MP to show support for this fund, details can be found [here](http://www.communitylandtrusts.org.uk/what-we-do/our-campaigns/community-housing-fund).
 
 We look forward to giving our members and investors a positive update in the Autumn!
+
+James Newton, Director
