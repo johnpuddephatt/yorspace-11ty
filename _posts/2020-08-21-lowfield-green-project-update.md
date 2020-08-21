@@ -3,7 +3,7 @@ title: Lowfield Green Project Update
 date: 2020-08-21T10:32:38.177Z
 layout: post
 image:
-  show_on_post: false
+  show_on_post: true
   file: /uploads/3d_vis_6.jpg
   caption: ""
 ---
