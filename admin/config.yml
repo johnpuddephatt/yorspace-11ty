@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-site_url: https://yorpsace.org
+site_url: https://yorspace.org
 
 media_folder: "uploads" # Media files will be stored in the repo under uploads
 publish_mode: editorial_workflow
