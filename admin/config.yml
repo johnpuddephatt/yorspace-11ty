@@ -2,7 +2,10 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+site_url: https://yorpsace.org
+
 media_folder: "uploads" # Media files will be stored in the repo under uploads
+publish_mode: editorial_workflow
 
 collections:
   - name: "site" # Used in routes, e.g., /admin/collections/blog
@@ -24,6 +27,7 @@ collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     summary: "{{title}} – {{day}}.{{month}}.{{year}}"
+    preview_path: "_posts/{{year}}-{{month}}-{{day}}-{{slug}}"
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -42,6 +46,7 @@ collections:
           - {label: "Show image at top of post?", name: "show_on_post", widget: "boolean", default: true }
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Used in the UI
+    preview_path: "{{ name | slug }}/index.html"
     folder: "_pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
