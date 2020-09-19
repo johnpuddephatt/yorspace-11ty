@@ -4,7 +4,7 @@ date: 2020-09-19T10:51:25.636Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/green-logo.jpg
+  file: /uploads/untitled-design.png
 ---
 <!--StartFragment-->
 
