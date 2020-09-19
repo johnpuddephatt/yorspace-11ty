@@ -16,7 +16,7 @@ image:
 
 We’ve had a pretty full-on year at YorSpace, having successfully surpassed our target raise in our first Community Share Issue and moved towards starting on-site at Lowfield Green. Over the summer, we’ve also been working with local residents and community organisations to develop ideas about creating York’s first community-led neighbourhood.
 
-Armed with a small Community Led Housing start-up grant, we’ve been looking at how a co-owned neighbourhood could look on a portion of the York Central site, adjacent to the City centre. Catchily called [YoCo](www.yoco.uk) (York Central Co-owned), we built on the excellent community engagement of [My York Central](https://myyorkcentral.org/) and the [8 big ideas](https://myyorkcentral.org/2018/05/01/my-york-central-big-ideas/) which that work generated.
+Armed with a small Community Led Housing start-up grant, we’ve been looking at how a co-owned neighbourhood could look on a portion of the York Central site, adjacent to the City centre. Catchily called [YoCo](https://www.yoco.uk/) (York Central Co-owned), we built on the excellent community engagement of [My York Central](https://myyorkcentral.org/) and the [8 big ideas](https://myyorkcentral.org/2018/05/01/my-york-central-big-ideas/) which that work generated.
 
 Over the past few months, we’ve featured in York Festival of Ideas, held a variety of online events, and in August, organised a community picnic in a public park just off Leeman Road, while simultaneously holding a virtual one online. We’re nothing if not resourceful! The virtual picnickers, led by local poet and wordsmith Julia Davis, even [wrote a poem](https://www.yoco.uk/blog/xg4lezo96qcdohp4doku95o7hw10ed) about how YoCo might look.
 
