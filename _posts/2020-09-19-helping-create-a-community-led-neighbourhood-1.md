@@ -4,7 +4,7 @@ date: 2020-09-19T10:45:07.217Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/dd2dbunr_400x400.jpg
+  file: /uploads/1500x500.jpg
 ---
 <!--StartFragment-->
 
