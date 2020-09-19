@@ -4,7 +4,7 @@ date: 2020-09-19T10:33:40.404Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/untitled-design.jpg
+  file: /uploads/1500x500.jpg
 ---
 <!--StartFragment-->
 
