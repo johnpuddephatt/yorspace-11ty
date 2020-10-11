@@ -4,7 +4,7 @@ date: 2020-10-11T11:27:36.233Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/twitter-cover.jpg
+  file: /uploads/house-image-cropped.jpg
 ---
 Apply to join the YorSpace Board as a Director
 
