@@ -4,7 +4,7 @@ date: 2020-11-13T13:30:02.770Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/co-op-logo-small.jpg
+  file: /uploads/untitled-design-3-.jpg
 ---
 We’re tickled pink to have been chosen by the [Cooperative Community Fund](https://www.coop.co.uk/membership/what-your-community-gets?utm_source=Coop.co.uk&utm_medium=relaunch_block&utm_campaign=value_to_community) as one of the local causes supported by their marvellous members’ reward scheme!
 
