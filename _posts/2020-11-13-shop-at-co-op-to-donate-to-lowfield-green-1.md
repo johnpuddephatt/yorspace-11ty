@@ -20,6 +20,6 @@ If you’re a Co-op shopper we’re calling on you to get behind our fundraising
 
 \-> Use your online Co-op account to search for local causes near you
 
-\-> Select **Lowfield Green Housing Co-op** as the cause you want to support
+\-> Select **Lowfield Green Housing Co-op** as the cause you want to support ([or click this link to go straight o it](https://membership.coop.co.uk/causes/52657))
 
 \-> Give yourself a pat on the back! Now every time you shop at Co-op flash your Co-op members card to generate a donation that will wing it’s way to our fundraising pot!
