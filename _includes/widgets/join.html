@@ -1,4 +1,4 @@
-<form action="{{ action }}" method="post" target="_blank" novalidate="">
+<form action="{{ action }}" method="post" novalidate="">
   <div id="form">
     <div class="field-group field-group__email">
       <label for="mce-EMAIL">Email Address<sup>*</sup></label>
@@ -97,15 +97,18 @@
     <div id="payment"></div>
   </div>
   <div id="thankyou">
-    <h3>Thank you!</h3>
-    <p id="js-subscribe-response"></p>
+    <h3>Payment successful</h3>
+    <p>Please wait while we add your details to our mailing list...</p>
   </div>
 </form>
 
 <script src="https://www.paypal.com/sdk/js?client-id={{apikey}}&amp;currency=GBP&amp;disable-funding=credit"></script>
 {% raw %}
   <script id="rendered-js">
+
     "use strict";
+
+    // Toggling field visibility based on other fields...
     var housingNeedSelect = document.querySelector('#mce-register');
     var housingNeedQuestions = document.querySelector('#residents');
     housingNeedSelect.addEventListener('change', function (e) {
@@ -133,6 +136,7 @@
         connectionOtherGroup.classList.add('is-hidden');
       }
     });
+
     paypal.Buttons({
       // Set up the transaction
       createOrder: function createOrder(data, actions) {
@@ -165,58 +169,69 @@
      */
     function mailchimp() {
       document.getElementById('pay').style.display = 'none';
-      var form = document.forms[0]; // Get url for mailchimp
+      document.getElementById('thankyou').style.display = 'block';
+      document.getElementById('thankyou').scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
 
-      var url = form.action.replace('/post?', '/post-json?'); // Add form data to object
-
-      var data = '';
-      var inputs = form.querySelectorAll('#form input');
-
-      for (var i = 0; i < inputs.length; i++) {
-        data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
-      }
-
-      var textareas = form.querySelectorAll('#form textarea');
-
-      for (var i = 0; i < textareas.length; i++) {
-        data += '&' + textareas[i].name + '=' + encodeURIComponent(textareas[i].value);
-      }
-
-      var selects = form.querySelectorAll('#form select');
-
-      for (var i = 0; i < selects.length; i++) {
-        data += '&' + selects[i].name + '=' + encodeURIComponent(selects[i].value);
-      } // Create & add post script to the DOM
+      setTimeout(()=> {
+        var form = document.forms[0]; // Get url for mailchimp
+        form.submit();
+      }, 3000);
 
 
-      var script = document.createElement('script');
-      script.src = url + data;
-      document.body.appendChild(script); // Callback function
+      // var url = form.action.replace('/post?', '/post-json?'); // Add form data to object
 
-      var callback = 'callback';
-
-      window[callback] = function (data) {
-        // Remove post script from the DOM
-        delete window[callback];
-        document.body.removeChild(script); // Display response message
-
-        document.getElementById('js-subscribe-response').innerHTML = data.msg;
-        document.getElementById('pay').style.display = 'none';
-        document.getElementById('thankyou').style.display = 'block';
-        document.getElementById('thankyou').scrollIntoView({
-          behavior: "smooth",
-          block: "center"
-        });
-      };
+      // var data = '';
+      // var inputs = form.querySelectorAll('#form input');
+      //
+      // for (var i = 0; i < inputs.length; i++) {
+      //   data += '&' + inputs[i].name + '=' + encodeURIComponent(inputs[i].value);
+      // }
+      //
+      // var textareas = form.querySelectorAll('#form textarea');
+      //
+      // for (var i = 0; i < textareas.length; i++) {
+      //   data += '&' + textareas[i].name + '=' + encodeURIComponent(textareas[i].value);
+      // }
+      //
+      // var selects = form.querySelectorAll('#form select');
+      //
+      // for (var i = 0; i < selects.length; i++) {
+      //   data += '&' + selects[i].name + '=' + encodeURIComponent(selects[i].value);
+      // } // Create & add post script to the DOM
+      //
+      // var script = document.createElement('script');
+      // script.src = url + data;
+      // document.body.appendChild(script); // Callback function
+      //
+      // var callback = 'callback';
+      //
+      // window[callback] = function (data) {
+      //   // Remove post script from the DOM
+      //   delete window[callback];
+      //   document.body.removeChild(script); // Display response message
+      //   document.getElementById('js-subscribe-response').innerHTML = data.msg;
+      //   document.getElementById('pay').style.display = 'none';
+      //   document.getElementById('thankyou').style.display = 'block';
+      //   document.getElementById('thankyou').scrollIntoView({
+      //     behavior: "smooth",
+      //     block: "center"
+      //   });
+      // };
     }
 
-    ; // When clicking continue, move onto the payment section if signup form is valid
+    // When clicking continue, move onto the payment section if signup form is valid
 
     document.getElementById('continue').addEventListener('click', function (e) {
+
       e.preventDefault();
+
       if(window.debugmode === true) {
         mailchimp();
       }
+
       else {
         if (document.forms[0].reportValidity()) {
           document.getElementById('form').style.display = 'none';
