@@ -9,7 +9,7 @@ image:
 ---
 At the YorSpace AGM in April 2021 members voted to elect Directors to sit on the Board. Find out more about them here.
 
-By the way, the Board still has room to grow and is inviting expressions of interest for the roles of Director or Treasurer. If you’d like to be part of the team steering YorSpace into the future contact us on [hello@yorpace.org](<mailto: hello@yorspace.org>) to find out how.
+By the way, the Board still has room to grow and is inviting expressions of interest for the roles of Director or Treasurer. If you’d like to be part of the team steering YorSpace into the future contact us on hello@yorpace.org to find out how.
 
 ### \- Sue -
 
