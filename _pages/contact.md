@@ -8,6 +8,5 @@ subtitle: |
 
 {% include widgets/contact.html,
   title: 'Send a message'
-  action: 'https://form.letsdance.agency/45MX7Elq'
   subject: 'New message from YorSpace.org'
   %}
