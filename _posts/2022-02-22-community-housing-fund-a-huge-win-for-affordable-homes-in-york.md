@@ -4,7 +4,7 @@ date: 2022-02-22T16:20:34.863Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/unnamed.png
+  file: /uploads/at-morrell-house.png
   caption: OpHouse directors Rebecca Carr (right) and Alice Wilson (left)
     celebrate at the Morrell House site
 ---
