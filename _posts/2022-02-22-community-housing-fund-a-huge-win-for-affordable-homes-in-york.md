@@ -4,7 +4,7 @@ date: 2022-02-22T16:20:34.863Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/unnamed.png
+  file: /uploads/at-morrell-house.png
   caption: OpHouse directors Rebecca Carr (right) and Alice Wilson (left)
     celebrate at the Morrell House site
 ---
@@ -28,7 +28,7 @@ The news of this grant funding comes following the successful delivery of a week
 
 Rebecca Carr and a team of architecture students from the School of Architecture at Sheffield University took over the disused retirement home and spent each day getting to know local people, decorating the front of the building, and finding out directly from the community what local people would like to see happening on site.
 
-![](/uploads/unnamed-1-.png "Locals from the Burton Green area visited the Morrell House site and made their mark!")
+![]( "Locals from the Burton Green area visited the Morrell House site and made their mark!")
 
 Local area coordinator Samantha Goddard had this to say about the project:
 
