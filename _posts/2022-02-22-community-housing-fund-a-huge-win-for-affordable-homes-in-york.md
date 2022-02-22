@@ -8,7 +8,7 @@ image:
   caption: OpHouse directors Rebecca Carr (right) and Alice Wilson (left)
     celebrate at the Morrell House site
 ---
-Following a successful funding application to the Community Housing Fund, YorSpace CLT and OpHouse, a York-based Community Benefit Society have joined forces on an exciting new housing project. 
+Following a successful funding application to the Community Housing Fund, YorSpace CLT and [OpHouse](www.ophouse.co.uk), a York-based Community Benefit Society have joined forces on an exciting new housing project. 
 
 The ‘Community Housing Fund Revenue Programme 2021/22’ is funded by the Department for Levelling Up, Housing and Communities (DLUHC). The award of this funding is fantastic news for York where the affordable housing crisis is a huge and worsening problem. 
 
