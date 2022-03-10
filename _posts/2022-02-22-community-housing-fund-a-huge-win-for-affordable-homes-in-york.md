@@ -5,8 +5,8 @@ layout: post
 image:
   show_on_post: true
   file: /uploads/wsp-morrell-house-presentation.png
-  caption: OpHouse directors Rebecca Carr (right) and Alice Wilson (left)
-    celebrate at the Morrell House site
+  caption: Sketch image of the proposed scheme developed with Sheffield Live
+    Projects Students
 ---
 Following a successful funding application to the Community Housing Fund, YorSpace CLT and [OpHouse](www.ophouse.co.uk), a York-based Community Benefit Society have joined forces on an exciting new housing project. 
 
