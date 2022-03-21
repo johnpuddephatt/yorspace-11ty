@@ -22,10 +22,8 @@ Whilst we were not awarded the prize, we are still excited to be progressing our
 
 We are looking to the future to ensure that the development is environmentally, socially and economically sustainable in the long-term. We are ensuring that the housing remains low-impact, healthy and affordable, by sticking to One Planet Development principles. OpHouse have been leading on community engagement, including running a series of on-street and online workshops, and hosting an exhibition at York Design Week. This engagement at both local level and the broader context of York will continue throughout the project to ensure that the project is genuinely led by the community and those impacted by the development.
 
-## Get involved and help make a positive impact on the housing market in York![](https://www.clarionhg.com/william-sutton-prize/)
+## Get involved and help make a positive impact on the housing market in York
 
 As always, we are still interested in meeting and collaborating with more people who want to make a difference to the current state of housing in York. If you want to volunteer some time, learn a bit more about YorSpace, or simply want to have your opinion heard, please get in touch with us at [hello@yorspace.org](mailto:hello@yorspace.org).
-
-
 
 <!--EndFragment-->
