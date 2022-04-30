@@ -5,6 +5,9 @@ layout: post
 image:
   show_on_post: true
   file: /uploads/yorspace-directors-2022.jpg
+  caption: Photos of Alex, Mikyla and Dom by (© Ian Miles
+    www.flashpointpictures.co.uk). These photos were commissioned for a project
+    by the Community Land Trust Network.
 ---
 ## On April 23rd, we hosted our 5th AGM at the Gateway Centre in Acomb. We were very excited to host an in-person AGM, having moved to a virtual platform for the last two years, and it was great to see so many faces. We also had a number of people unable to attend in person, who joined us remotely over Zoom.
 
