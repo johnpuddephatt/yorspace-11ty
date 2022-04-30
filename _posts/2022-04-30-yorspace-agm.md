@@ -1,5 +1,5 @@
 ---
-title: YorSpace AGM
+title: YorSpace AGM 2022
 date: 2022-04-30T17:25:58.350Z
 layout: post
 image:
