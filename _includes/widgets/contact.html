@@ -1,8 +1,10 @@
-<form name="contact" data-netlify="true" method="POST" class="contact-form">
+<form name="contact" data-netlify="true" method="POST" class="contact-form" netlify-honeypot="website">
   <h2 class="form-title">{{title | default: 'Contact us' }}</h2>
   <input type="hidden" name="_subject" value="{{ subject | default: "New message received" }}" >
   <input type="email" name="_replyto" placeholder="Your email" required="">
   <input type="text" name="name" placeholder="Your name" required="">
+  <input type="url" name="website" style="height: 0px; width: 0px; overflow: hidden; display: block;" />
+   netlify-honeypot="bot-field"
   <textarea rows="7" name="message" placeholder="Your message" required=""></textarea>
   <input type="submit" value="Send">
 </form>
