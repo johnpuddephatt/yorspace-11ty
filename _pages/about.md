@@ -1,6 +1,6 @@
 ---
 layout: page
-name: about
+name: About
 title: Who we are
 subtitle: |
   Find out more about the people involved in Yorspace
