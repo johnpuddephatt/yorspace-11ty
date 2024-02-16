@@ -4,7 +4,8 @@ const svgContents = require("eleventy-plugin-svg-contents");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.html');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.html');
-  eleventyConfig.addLayoutAlias('live', 'layouts/live.html');
+  eleventyConfig.addLayoutAlias('lowfieldgreen', 'layouts/lowfieldgreen.html');
+  eleventyConfig.addLayoutAlias('morrellhouse', 'layouts/morrellhouse.html');
   eleventyConfig.addLayoutAlias('invest', 'layouts/invest.html');
   eleventyConfig.addLayoutAlias('home', 'layouts/home.html');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
@@ -54,16 +55,16 @@ module.exports = function(eleventyConfig) {
   //
   // });
   //
-  // eleventyConfig.addFilter('whereContains', function (array, key, value) {
-  //   return array.filter(item => {
-  //     const keys = key.split('.');
-  //     const reducedKey = keys.reduce((object, key) => {
-  //       return object[key];
-  //     }, item);
-  //
-  //     return (reducedKey.indexOf(value) == -1 ? false : item);
-  //   });
-  // });
+  eleventyConfig.addFilter('whereContains', function (array, key, value) {
+    return array.filter(item => {
+      const keys = key.split('.');
+      const reducedKey = keys.reduce((object, key) => {
+        return object[key];
+      }, item);
+  
+      return (reducedKey.indexOf(value) == -1 ? false : item);
+    });
+  });
 
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,

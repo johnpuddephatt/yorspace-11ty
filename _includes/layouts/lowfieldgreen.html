@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+<header class="page-header page-header__section">
+  <div class="container">
+    <div class="header--left">
+      <div class="section-pretitle">Lowfield Green</div>
+      <h1 class="section-title">{{ title | escape | markdownify }}</h1>
+      <div class="section-subtitle">
+        <p>{{ subtitle | escape | markdownify }}</p>
+      </div>
+    </div>
+    <div class="header--right">
+      <img src="/assets/images/Lowfield-Green-Logo.png" alt="Lowfield Green logo" />
+
+      <h3>Lowfield Green Housing Co-op</h3>
+      <p class="totaliser-description">
+      Interested in supporting Lowfield Green? Or learning about living there?
+      </p>
+      <a target="_blank" href="https://lowfieldgreencoop.uk/" class="button section-header-button">Find out more</a>
+    </div>
+  </div>
+</header>
+
+<section class="section section--about-life">
+  <div class="section-row">
+    <div class="container">
+      <div class="about-life--left">
+        <div class="about-life--text">
+          <h2 class="section-heading">Life at Lowfield Green</h2>
+          <p>
+            Lowfield Green aims to create a strong community of people
+            interested in finding a solution to the problems of traditional
+            housing models.
+          </p>
+        </div>
+        <div class="about-life--boxes">
+          <div class="about-life--box">
+            <h3>Communal features of Lowfield Green</h3>
+            <ul>
+              <li>Communal outdoor space and gardens</li>
+              <li>Plenty of secure cycle parking</li>
+              <li>Common house for resident shared meals and activities</li>
+              <li>Car, workshop, shed and tool share</li>
+            </ul>
+          </div>
+          <div class="about-life--box">
+            <h3>Who's Lowfield Green for?</h3>
+            <ul>
+              <li>
+                People interested in new ways of living that create strong
+                communities
+              </li>
+              <li>York connection, especially Y024</li>
+              <li>
+                First time buyers, people in need of a larger home or those
+                looking to downsize
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="about-life--right">
+        <div class="slider">
+        
+          <img src="/assets/images/new_movisuals.jpg" />
+        </div>
+        <span class="slider-credit"
+          >Image by
+          <a href="http://www.movizuals.co.uk/" target="_blank">Movizuals</a>
+          visualisation studio.
+        </span
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-rows section--about-rows">
+  <div class="section-row">
+    <div class="container">
+      <div class="section-row--text">
+        <h2 class="section-heading">
+          Housing with sustainability & affordability at its heart
+        </h2>
+        <p>
+          Our houses are built along
+          <a
+            href="https://www.bioregional.com/one-planet-living"
+            target="_blank"
+            >One Planet Living</a
+          >
+          principles, meaning that while they’ll meet the needs of the people
+          who live there, they also use resources in a way that our planet can
+          sustain.
+        </p>
+        <p>
+          And unlike most houses, the homes we’re creating won’t ever be sold on
+          the open market for quick profit. Residents will be shareholding
+          members of the cooperative that owns the houses, paying a deposit and
+          monthly contributions to give them security and equity.
+        </p>
+      </div>
+      <div class="section-row--image">
+        <img src="/assets/images/live-1.jpg" />
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section section--faqs">
+  {% include components/faqs.html, title: "Frequently asked questions",
+  location: "live"%}
+</section>

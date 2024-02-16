@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<header class="page-header page-header__section">
+  <div class="container">
+    <div class="header--left">
+      <div class="section-pretitle">Morrell House</div>
+      <h1 class="section-title">{{ title | escape | markdownify }}</h1>
+      <div class="section-subtitle">
+        <p>{{ subtitle | escape | markdownify }}</p>
+      </div>
+    </div>
+    <div class="header--right">
+      <img src="/assets/images/morrell.jpg" alt="Morrell House Housing Co-op logo" />
+
+      <h3>Morrell House Housing Co-op</h3>
+      <p class="totaliser-description">
+      Interested in joining the co-operative? Or learn about the project?
+      </p>
+      <a target="_blank" href="https://morrellhousecoop.wordpress.com/" class="button section-header-button">Find out more</a>
+    </div>
+  </div>
+</header>
+
+<section class="section section--about-life">
+  <div class="section-row">
+    <div class="container">
+      <div class="about-life--left">
+        <div class="about-life--text">
+          <h2 class="section-heading">Our plans for Morrell House</h2>
+          <p>
+           Yorspace, OpHouse and the Morrell House Housing Co-operative have been working together to assess the site’s potential and engage with the community to develop plans for the site.
+          </p>
+        </div>
+        <div class="about-life--boxes">
+          <div class="about-life--box">
+            <h3>About the site</h3>
+            <ul>
+              <li>Located in Clifton, north of York city centre</li>
+              <li>Former care home which housed 29 people</li>
+              <li>Grounds including gardens and parking</li>
+              <li>Generally in good condition</li>
+            </ul>
+          </div>
+          <div class="about-life--box">
+            <h3>Our ambitions</h3>
+            <ul>
+              <li>
+              Mix of 17, self-contained one-bed and two-bed homes
+              </li>
+              <li>Communal features including shared kitchen, living room and dining space</li>
+              <li>
+                Space for wider community use
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="about-life--right">
+        <div class="slider">
+      
+                 <img src="/assets/images/morrell3.jpg" />
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-rows section--about-rows">
+  <div class="section-row">
+    <div class="container">
+      <div class="section-row--text">
+        <h2 class="section-heading">
+           Sustainable by design
+        </h2>
+        <p>
+          We’re looking to achieve high levels of sustainability by reusing and repurposing the existing building as much as possible, while still bringing in changes that improve efficiency.</p>
+
+
+
+
+          <p>In particular, our aim is to:</p>
+
+
+          <ul>
+            <li>Retain most of the existing building structure</li>
+            <li>Repurpose the existing heating system to provide ‘district heating’</li>
+            <li>Improve thermal performance with low embodied carbon insulation materials </li>
+            <li>Lower residents’ environmental footprint whilst saving them money</li>
+            
+          </ul>
+        </p>
+      </div>
+      <div class="section-row--image">
+        <img src="/assets/images/morrell2.jpg" />
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section section--faqs">
+  {% include components/faqs.html, title: "Frequently asked questions",
+  location: "morrell"%}
+</section>

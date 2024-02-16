@@ -1,0 +1,65 @@
+.block--people {
+  margin: 2 * $base-spacing 0;
+}
+
+.block--title {
+  margin-bottom: $base-spacing;
+}
+
+.block--people--grid {
+    margin: $base-spacing 0;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: -$small-spacing;
+  // margin-right: -$small-spacing;
+}
+
+.block--people--item {
+  flex: 0 0 33.333%;
+  text-indent: 0 !important;
+  list-style-type: none;
+  padding-left: 0 !important;
+  &::before {
+    content: none !important;
+  }
+  // text-align: center;
+  position: relative;
+  // padding: $base-spacing $small-spacing;
+  margin-bottom: 2 * $base-spacing;
+  display: flex;
+  flex-direction: row;
+}
+
+.block--people--name {
+  margin-bottom: 0;
+  font-size: modular-scale(2);
+}
+
+.block--people--role {
+  font-size: modular-scale(1);
+
+  font-weight: 700;
+  margin-bottom: $small-spacing/2;
+}
+
+.block--people--image {
+  overflow: hidden;
+  margin-bottom: $small-spacing;
+  flex: 0 0 20%;
+  img {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    border-radius: 50%;
+  }
+  margin-right: $base-spacing;
+
+}
+
+.block--people--description {
+  font-size: modular-scale(0);
+  p {
+    font-size: modular-scale(0) !important;
+    font-weight: 500 !important;
+  }
+}

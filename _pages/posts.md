@@ -1,6 +1,6 @@
 ---
 layout: posts
-name: Blog
+name: News
 title: Posts
 permalink: /posts/
 subtitle: |

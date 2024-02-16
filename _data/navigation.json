@@ -1,9 +1,9 @@
 {
 	"header_pages": [
 		"./_pages/posts.md",
-		"./_pages/live.md",
+		"./_pages/lowfield-green.md",
+		"./_pages/morrell-house.md",
 		"./_pages/join.md",
-		"./_pages/resources.md",
 		"./_pages/donate.md"
 	],
 	"footer_pages": [

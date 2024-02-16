@@ -1,0 +1,38 @@
+{
+    "operational_team": [
+        {
+            "name": "James Neward",
+            "linkedin": "https://www.linkedin.com/in/james-neward/",
+            "role": "Chief Operating Officer & co-founder",
+            "description": "James is a co-founder and Chief Operating Officer and is a member of Lowfield Green Housing Co-op. He is a chartered building design consultant and project manager with expertise in low carbon architecture, retrofit & community led projects. Experienced in delivering a range of environmentally conscious projects for residential, commercial and community clients. In addition to his work with YorSpace he works nationally with the Confederation of Co-operative Housing (CCH) to develop retrofit services for the co-operative housing movement. James is an accredited Community Led Housing enabler experienced in working with a range of community led housing groups across Yorkshire and beyond.",
+            "image": "/assets/images/people/james.jpeg"
+        },
+        {
+            "name": "Laurie Smith",
+            "linkedin": "https://www.linkedin.com/in/laurie-smith",
+            "role": "CEO",
+            "description": "Laurie recently joined as CEO of the newly formed YorSpace Operational Team and brings 20+ years of experience in leading teams to achieve commercial growth and deliver organisational excellence. An active champion of social change and civic engagement with proven success in training, mentoring, and leading high-performing teams. He has demonstrated accomplishments in business redevelopment and project management. Skilled in building strong relationships with stakeholders and bringing added value to clients. Adept at promoting and expanding commercial activities to generate revenue and ensure sustainable growth. An accomplished problem solver, creative thinker and fearless leader.",
+            "image": "/assets/images/people/laurie.jpeg"
+        }
+    ],
+    "board_of_trustees": [
+        {
+            "name": "Susannah Bird",
+            "role": "Director & co-founder",
+            "description": "Sue co-founded YorSpace because she believes that houses should be built by the people who live in them and that this will create warm and thriving communities that will benefit everyone. She continues to work to bring Lowfield Green to completion which she hopes will be the first of many similar developments across York. Sue is a biological scientist by profession and enjoys applying her skills in innovation and practical problem solving from the sciences to tackle the problems of community-led housing.",
+            "image": "/assets/images/people/sue.jpeg"
+        },
+        {
+            "name": "Alex Sparrow",
+            "role": "Director",
+            "description": "Alex’s interest in community-led housing and housing co-ops is long-held. Since working in Housing Advice in the early 1990s, he’s observed how the many positives of housing provision highly suited to - and co-created with - its occupants also benefit the wider local community.  Alex is now the Founder and MD at UK Hempcrete and is a leading expert in the use of hempcrete and other bio-materials in construction. He co-authored The Hempcrete Book (2014), a comprehensive guide for self-builders and architects on how to build houses with hempcrete and associated bio-based materials.",
+            "image": "/assets/images/people/alex.jpeg"
+        },
+        {
+            "name": "Dom Shaw",
+            "role": "Director",
+            "description": "",
+            "image": "/assets/images/people/dom.jpeg"
+        }
+    ]
+}

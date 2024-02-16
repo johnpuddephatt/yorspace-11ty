@@ -82,7 +82,16 @@ hr {
   margin-bottom: 0;
 }
 
-.page-subtitle {
+.page-subtitle,
+.section-subtitle
+ {
   margin-top: $small-spacing;
   font-size: modular-scale(1);
+}
+
+
+.section-pretitle {
+  margin-bottom: $small-spacing;
+  font-size: modular-scale(1);
+  font-weight: bold;
 }
