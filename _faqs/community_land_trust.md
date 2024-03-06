@@ -1,5 +1,5 @@
 ---
-title: What is a community land trust?
+title: What is a Community Land Trust?
 location:
 - home
 ---

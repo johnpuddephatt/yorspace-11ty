@@ -4,7 +4,7 @@
     {% for post in collections.posts limit: 3 %}
       <a href="{% if post.data.external_link %}{{ post.data.external_link }}{% else %}{{ post.url }}{% endif %}" class="home-blog--item" data-aos="fade-up" data-aos-ratio=".25" data-aos-delay="{{ forloop.index | minus: 1 |  times:200 }}">
         <div class="home-blog--item--image">
-          {% include cloudinary.html, img: post.data.image.file, width: "270" height: "270" %}
+          
         </div>
         <div class="home-blog--item--text">
           <h3 class="home-blog--item--title">{{ post.data.title }}</h3>

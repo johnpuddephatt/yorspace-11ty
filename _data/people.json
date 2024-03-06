@@ -15,10 +15,10 @@
             "image": "/assets/images/people/laurie.jpeg"
         }
     ],
-    "board_of_trustees": [
+    "directors": [
         {
             "name": "Susannah Bird",
-            "role": "Director & co-founder",
+            "role": "Co-founding director",
             "description": "Sue co-founded YorSpace because she believes that houses should be built by the people who live in them and that this will create warm and thriving communities that will benefit everyone. She continues to work to bring Lowfield Green to completion which she hopes will be the first of many similar developments across York. Sue is a biological scientist by profession and enjoys applying her skills in innovation and practical problem solving from the sciences to tackle the problems of community-led housing.",
             "image": "/assets/images/people/sue.jpeg"
         },
@@ -31,7 +31,7 @@
         {
             "name": "Dom Shaw",
             "role": "Director",
-            "description": "",
+            "description": "Dom joined YorSpace in 2022. Living in York since 2005, he wanted to provide direct support to our efforts to meet the city's need for truly affordable housing. A chartered accountant, he has worked in financial services for 10 years, primarily in the Building Society sector. Much like the Building Society movement over 200 years ago, Dom believes the community-led housing movement has the potential to transform housing and home ownership in the UK.",
             "image": "/assets/images/people/dom.jpeg"
         }
     ]

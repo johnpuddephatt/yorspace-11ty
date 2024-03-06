@@ -1,7 +1,6 @@
 ---
 title: What is mutual home ownership?
 location:
-- home
 - live
 ---
 Mutual Home Ownership (MHO) is a new form of home ownership with affordability at its heart.

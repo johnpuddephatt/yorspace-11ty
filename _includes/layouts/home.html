@@ -5,13 +5,13 @@ layout: default
   <div class="container">
     <h1 class="page-title page-title__home">{{ title | renderUsingMarkdown}}</h1>
     <div class="page-subtitle page-subtitle__home">{{ subtitle | escape | newline_to_br }}</div>
-    <button class="page-header--button button button__ghost trailer-button" data-iframe="vqJ1VtEm1Co">Watch our video</button>
+    <!-- <button class="page-header--button button button__ghost trailer-button" data-iframe="vqJ1VtEm1Co">Watch our video</button> -->
     {{ "/_resources/images/hero.svg" | svgContents }}
   </div>
-  <div class="single-listing--trailer">
+  <!-- <div class="single-listing--trailer">
     <div class="single-listing--trailer--iframe"></div>
     <button class="close-trailer-button">Close trailer</button>
-  </div>
+  </div> -->
 </header>
 
 <section class="section section--home-plans">
@@ -19,7 +19,7 @@ layout: default
 </section>
 
 <section class="section section--home-image">
-  {% include components/home-image.html, title: "We’re bringing affordable homes to York", image: "/assets/images/james_onsite_l.jpg" %}
+  {% include components/home-image.html, title: "We’re bringing low carbon, affordable communities to York", image: "/assets/images/York-CLT-2847.jpg" %}
 </section>
 
 <section class="section section--home-about">

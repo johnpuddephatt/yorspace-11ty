@@ -39,5 +39,8 @@
     border-radius: $base-border-radius;
     line-height: $heading-line-height;
     padding: $base-spacing/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

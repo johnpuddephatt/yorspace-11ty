@@ -1,10 +1,9 @@
 ---
 title: What are One Planet Living principles?
 location:
-- live
 - home
 ---
-One Planet Living is a sustainability framework used to design and shape YorSpace homes. It is different from other sustainability frameworks because:
+One Planet Living is a sustainability framework used to design and shape YorSpace developments. It is different from other sustainability frameworks because:
 
 - It puts people first – it’s grounded in the reality of how people live their lives rather than box ticking
 - It’s holistic – nothing will drop through the gaps with the 10 principles

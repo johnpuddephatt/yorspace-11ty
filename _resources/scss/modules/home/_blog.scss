@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: row;
   text-align: left;
-  align-items: center;
   @media screen and (min-width: $medium-screen) {
     // background-image: linear-gradient(to bottom, $orange #{2.99 * $base-spacing}, white #{3 * $base-spacing}  );
     text-align: center;
@@ -70,9 +69,9 @@
       padding-right: $base-spacing;
     }
     .home-blog--item--image {
+      display: none;
       margin-top: 0;
       margin-right: $base-spacing;
-      flex: 0 0 30%;
       &::after {
         display: none;
       }
@@ -103,18 +102,7 @@
 
 .home-blog--item--title {
   font-size: modular-scale(2);
-  @media screen and (min-width: $medium-screen) {
-    &::before {
-      content: "“";
-      display: block;
-      font-size: modular-scale(8);
-      color: $turquoise;
-      line-height: 0;
-      margin-top: 2.5 * $base-spacing;
-      margin-bottom: $small-spacing/2;
-    }
-    font-size: modular-scale(1);
-  }
+ 
 }
 
 .home-blog--item--excerpt {
@@ -133,7 +121,7 @@
   text-align: right;
   font-size: modular-scale(-1);
   margin-top: auto;
-  padding-top: $small-spacing;
+  padding-top: 1.5 * $base-spacing;
   transition: color 2 * $base-duration;
   display: none;
   @media screen and (min-width: $medium-screen) {
@@ -161,12 +149,40 @@
 .home-blog--item--image {
   overflow: hidden;
   margin-top: 0;
-  padding-right: $base-spacing;
+  margin-right: $base-spacing;
+  display: block;
+  border-radius: 50%;
+  height: 3 * $base-spacing;
+  width: 3 * $base-spacing;
+ 
+  border: $base-border;
+  padding: $base-spacing;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+&::before {
+      content: "“";
+      margin-top: 4.5rem;
+      display: block;
+      font-size: modular-scale(8);
+      color: $turquoise;
+      line-height: 0
+    }
+   @media screen and (min-width: $medium-screen) {
+    &::before {
+    }
+    font-size: modular-scale(1);
+  }
 
   @media screen and (min-width: $medium-screen) {
-    margin-top: -5 * $base-spacing;
+    margin-top: -2.5 * $base-spacing;
+     margin-left: auto;
+  margin-right: auto;    
+
     padding-left: $small-spacing;
     padding-right: $small-spacing;
+    margin-bottom: 2 * $base-spacing;
     // &::before {
     //   content: '“';
     //   font-size: modular-scale(12);
@@ -179,27 +195,12 @@
     //   transform: translate(-50%,50%);
     //   opacity: 1;
     // }
-    &::after {
-      content: '';
-      width: 40%;
-      margin: $base-spacing auto;
-      height: 2 * $base-border-width;
-      background-color: $base-font-color;
-      display: block;
-      border-radius: 1em;
-    }
+    
   }
   position: relative;
 
 
-  img {
-    display: block;
-    border-radius: 50%;
-    width: 100%;
-    height: auto;
-      border: $base-border;
 
-  }
 }
 
 .home-blog--view-all {
