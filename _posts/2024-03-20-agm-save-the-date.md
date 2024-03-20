@@ -1,5 +1,5 @@
 ---
-title: AGM - Save the date!
+title: AGM 2024 - Save the date!
 date: 2024-03-20T15:47:49.435Z
 layout: post
 image:
