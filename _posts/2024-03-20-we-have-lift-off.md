@@ -5,6 +5,7 @@ layout: post
 image:
   show_on_post: true
   file: /uploads/lowfieldgreen-homes-on-site-march2024.jpg
+  caption: Materials arriving onsite in February 2024
 ---
 After successive years of well documented global challenges combined with difficult funding landscapes, we are so excited to announce that 2024 will be THE year for our first scheme in York!
 
