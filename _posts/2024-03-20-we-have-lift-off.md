@@ -6,8 +6,6 @@ image:
   show_on_post: true
   file: /uploads/lowfieldgreen-homes-on-site-march2024.jpg
 ---
-<!--StartFragment-->
-
 After successive years of well documented global challenges combined with difficult funding landscapes, we are so excited to announce that 2024 will be THE year for our first scheme in York!
 
 **The story so far…**
