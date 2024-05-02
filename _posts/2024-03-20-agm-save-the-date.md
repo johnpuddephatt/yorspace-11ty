@@ -4,7 +4,7 @@ date: 2024-03-20T15:47:49.435Z
 layout: post
 image:
   show_on_post: true
-  file: /uploads/DbY-FbLWAAAi7S1-1.jpg
+  file: /uploads/https___cdn.evbuc.com_images_731342259_150716973016_1_original.jpeg
 ---
 Our next YorSpace Annual General Meeting will take place on Saturday 18th May at The Gateway Centre, on Front Street, Acomb. 
 
