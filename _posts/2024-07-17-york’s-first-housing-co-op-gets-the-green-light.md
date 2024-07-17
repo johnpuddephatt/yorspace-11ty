@@ -38,5 +38,3 @@ Phase 1 of the development will see 14 homes across three terrace blocks with 2,
 If this sounds up your street, the resident group is currently looking for local people to join Lowfield Green Housing Co-op and become future residents. **Applications are now open for 2-bed and 3-bed homes.** 
 
 Visit the Co-op’s website **<https://lowfieldgreencoop.uk/>** for more information and request an application pack.
-
-![]()
