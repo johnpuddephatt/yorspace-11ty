@@ -39,4 +39,4 @@ If this sounds up your street, the resident group is currently looking for local
 
 Visit the Co-op’s website **<https://lowfieldgreencoop.uk/>** for more information and request an application pack.
 
-![]( "Applications are open for 2 and 3-bed homes at Lowfield Green in York")
+![]()
