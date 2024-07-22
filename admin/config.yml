@@ -66,4 +66,4 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Location", name: "location", widget: "select", multiple: true, options: ["home", "live", "invest"]}
+      - {label: "Location", name: "location", widget: "select", multiple: true, options: ["home", "live", "invest","morrell"]}
