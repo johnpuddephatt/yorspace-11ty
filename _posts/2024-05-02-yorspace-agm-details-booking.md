@@ -1,0 +1,39 @@
+---
+title: YorSpace AGM - details & booking
+date: 2024-05-02T15:07:59.301Z
+layout: post
+image:
+  show_on_post: true
+  file: /uploads/sue-stickies-1-.jpg
+---
+The team warmly welcome to join us for the next YorSpace Annual General Meeting that will take place on the afternoon of **Saturday 18th May**.
+
+T﻿he 18th May just so happens to be #WorldCLTDay2024 - https://worldcltday.org/
+
+P﻿erfect timing!
+
+**F﻿or booking please use the eventbrite link here: https://shorturl.at/efzN3**
+
+This is your chance to find out the very latest about our project development, ask the team questions and to find out more on the wider sector.
+
+Following recent member feedback, we have moved the meeting to the afternoon and for the first time we are making the session fully hybrid, to give all YorSpace members the opportunity to attend and participate in person or online.
+
+For those that choose to come along in person, the agenda will include a walk to the Lowfield Green site so you can see the development in progress for yourself. We ask you to check the weather on the day and to bring suitable clothes and footwear for this activity.
+
+You don't need to be a YorSpace member to attend the AGM, we gladly welcome guests to attend as well. Please note, however, that only YorSpace members can participate in voting and are able to stand for election to the Board.
+
+The venue is The **Gateway Centre**, Front Street, Acomb, **York**, YO24 3BZ.
+
+For more information about the venue please click **[here](https://gatewaychurch.co.uk/)**
+
+Members are welcome to stay and talk to the operational team after the formal AGM has concluded.
+
+Please register via this link whether you intend to join us either **online** or **in person**.
+
+Details of how to join the meeting virtually will be shared once signed up.
+
+Please do reach out if you want to submit a question in advance.
+
+**We look forward to seeing you on the 18th May.**
+
+The YorSpace Directors
